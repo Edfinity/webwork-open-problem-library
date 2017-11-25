@@ -210,7 +210,7 @@ ENDDOCUMENT();  # This should be the last executable line in the problem.
 ## Date('3/27/2009')
 ## Author('Juan Marin')
 ## Institution('Alfred University')
-## TitleText1('Differential Equations with Boundary-Value Peoblems')
+## TitleText1('Differential Equations with Boundary-Value Problems')
 ## EditionText1('7')
 ## AuthorText1('Zill and Cullen')
 ## Section1('4.7-CauchyEulerEquations')

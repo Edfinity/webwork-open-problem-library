@@ -84,7 +84,7 @@ $cn->{test_points} = [[3,1,1],[-4,-1,-2.5],[8,2,-2.25],[-0.5,-2,-1.3],[10.8,3,2.
 
 Context()->texStrings;
 BEGIN_TEXT
-In this problem we explore using Fourier series to solve nonhomogeneous boundary value problems. For \(u_n\) type un, for derivatives use the prime notation \(u_n^\prime,u_n^{\prime\prime},\ldots\). 
+In this problem we explore using Fourier series to solve nonhomogeneous Boundary-Value Problems. For \(u_n\) type un, for derivatives use the prime notation \(u_n^\prime,u_n^{\prime\prime},\ldots\). 
 $BR
 $BR
 $BR
