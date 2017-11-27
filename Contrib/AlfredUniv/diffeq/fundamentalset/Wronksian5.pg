@@ -3,7 +3,7 @@
 # File Created: 3/27/2009
 # Last Modified: 3/27/2009
 # Problem Author: Juan Marin
-# WeBWorK Entry: 
+# WeBWorK Entry:
 # Location: Alfred University
 #
 ##ENDDESCRIPTION
@@ -17,9 +17,9 @@
 ## Date('3/27/2009')
 ## Author('Juan Marin')
 ## Institution('Alfred University')
-## TitleText1('Differential Equations with Boundary-Value Peoblems')
+## TitleText1('Differential Equations with Boundary-Value Problems')
 ## EditionText1('7')
-## AuthorText1('Zill and Cullen')
+## AuthorText1('Zill, Cullen')
 ## Section1('4.7-CauchyEulerEquations')
 ## Problem1('')
 
@@ -37,7 +37,7 @@ loadMacros(
   "parserImplicitEquation.pl",
   "PGcourse.pl"
 );
- 
+
 #install_problem_grader(~~&full_partial_grader);
 
 # No partial credit on this problem, so we say:
@@ -70,7 +70,7 @@ $ddg = $dg->D('x');
 $ddh = $dh->D('x');
 
 
-$w = Compute(" $f * ($dg * $ddh - $dh * $ddg) 
+$w = Compute(" $f * ($dg * $ddh - $dh * $ddg)
               -$g * ($df * $ddh - $dh * $ddf)
               +$h * ($df * $ddg - $dg * $ddf)
            ")->reduce;
@@ -81,19 +81,19 @@ $w = Compute(" $f * ($dg * $ddh - $dh * $ddg)
 # Make a new select list
 $tf = new_pop_up_select_list();
 $tf->ra_pop_up_list(["Yes" => "Yes","No" => "No"]);
-# $tf now "contains" the select list object.  
+# $tf now "contains" the select list object.
 # See matchinglistexample.pg for details
 
 
 $tf -> qa (
-q!Is \(\{y_1,y_2,y_3\}\) a fundamental set for 
+q!Is \(\{y_1,y_2,y_3\}\) a fundamental set for
 \(x D^3y - $c  D^2 y -$a2 x Dy + $a2c y =0\)
 on \((0,\infty)\)?!,  # each entry has to end with a comma
 "No",
 );   # remember every statement has to end with a semi-colon.
 
 # Choose two of the question and answer pairs at random.
-$tf ->choose(1);  # Using choose(3) would choose all three questions, but the order of the questions and answers would be 
+$tf ->choose(1);  # Using choose(3) would choose all three questions, but the order of the questions and answers would be
                   # scrambled.
 
 
@@ -107,24 +107,24 @@ $tf ->choose(1);  # Using choose(3) would choose all three questions, but the or
 Context()->texStrings;
 BEGIN_TEXT
 $PAR
-For this problem you may want to recall that if \(y=\sinh(x),\) then 
-\(\displaystyle{\frac{dy}{dx}=\cosh(x)},\) 
+For this problem you may want to recall that if \(y=\sinh(x),\) then
+\(\displaystyle{\frac{dy}{dx}=\cosh(x)},\)
 and
 \(\displaystyle{\frac{d^2y}{dx^2}=\sinh(x)}\).
 $PAR
-It can be shown that \(y_1=\sinh($a x),\ y_2=\cosh($a x)\) and \(y_3=e^{$a x}\) are 
-solutions to the differential equation 
+It can be shown that \(y_1=\sinh($a x),\ y_2=\cosh($a x)\) and \(y_3=e^{$a x}\) are
+solutions to the differential equation
 \(x D^3y - $c  D^2 y -$a2 x Dy + $a2c y =0\)
 on \((0,\infty)\).
-$PAR 
+$PAR
 
-What does the  Wronskian of \(y_1, y_2, y_3\) equal on \((0,\infty)\)? 
+What does the  Wronskian of \(y_1, y_2, y_3\) equal on \((0,\infty)\)?
 $PAR
 \(W(y_1, y_2, y_3 )\) =  \{ ans_rule()\} on \((0,\infty)\).
 
 $BR
 \{ $tf-> print_q \}
- 
+
 END_TEXT
 
 

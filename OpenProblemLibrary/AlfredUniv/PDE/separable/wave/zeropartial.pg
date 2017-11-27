@@ -1,5 +1,5 @@
 ##DESCRIPTION
-##  Algebra problem: true or false for inequality 
+##  Algebra problem: true or false for inequality
 ##ENDDESCRIPTION
 
 
@@ -10,15 +10,15 @@
 ## Institution(Alfred University)
 ## Author(Darwyn Cook)
 ## Level(5)
-## TitleText1('Differential Equations')
-## AuthorText1('Zill')
+## TitleText1('Differential Equations with Boundary-Value Problems')
+## AuthorText1('Zill, Cullen')
 ## EditionText1('6')
 ## Section1('12.3')
 ## Problem1('')
 ## KEYWORDS('PDE', 'wave', 'equation')
 ########################################################################
 
-DOCUMENT();      
+DOCUMENT();
 
 loadMacros(
   "PGstandard.pl",
@@ -47,9 +47,9 @@ Context()->variables->{namePattern} = qr/[a-z][a-z0-9_]*'*/i;
 Context()->variables->are("X"=>"Real","X'"=>"Real","X''"=>"Real","T"=>"Real","T''"=>"Real","L"=>"Real","lambda"=>"Real","a"=>"Real","n"=>"Real");
 Context()->variables->set(lambda => {TeX => '{\lambda}'});
 Context()->functions->undefine("acos","acosh");
-Context()->{error}{msg}{"Function 'acosh' is not allowed in this context"} 
+Context()->{error}{msg}{"Function 'acosh' is not allowed in this context"}
 = "WeBWorK thinks you meant the inverse cosh function, you need to put the multiplication symbol between the a and the cosh";
-Context()->{error}{msg}{"Function 'acos' is not allowed in this context"} 
+Context()->{error}{msg}{"Function 'acos' is not allowed in this context"}
 = "WeBWorK thinks you meant the inverse cos function, you need to put the multiplication symbol between the a and the cos";
 $DEcontext = Context()->copy;
 
@@ -57,13 +57,13 @@ Context("Numeric");
 Context()->variables->add("y"=>"Real","t"=>"Real","L"=>"Real","n"=>"Real","alpha"=>"Real","a"=>"Real","A"=>"Real","B"=>"Real","C"=>"Real","D"=>"Real","n"=>"Real");
 Context()->variables->set(alpha => {TeX => '{\alpha}'});
 Context()->functions->undefine("acos","acosh");
-Context()->{error}{msg}{"Function 'acosh' is not allowed in this context"} 
+Context()->{error}{msg}{"Function 'acosh' is not allowed in this context"}
 = "WeBWorK thinks you meant the inverse cosh function, you need to put the multiplication symbol between the a and the cosh";
-Context()->{error}{msg}{"Function 'acos' is not allowed in this context"} 
+Context()->{error}{msg}{"Function 'acos' is not allowed in this context"}
 = "WeBWorK thinks you meant the inverse cos function, you need to put the multiplication symbol between the a and the cos";
 
 ## Constant initial velocity
-$a = Compute(non_zero_random(-3,3)); 
+$a = Compute(non_zero_random(-3,3));
 
 $cnt = Formula("cos(n*pi*a*t/L)");
 $snt = Formula("sin(n*pi*a*t/L)");
@@ -88,12 +88,12 @@ $homogeneousright = Formula($DEcontext,"0");
 
 $multians = MultiAnswer($left,$homogeneousleft,$right,$homogeneousright)->with(
   singleResult => 0,
-  checker => sub 
+  checker => sub
     {
       my ( $correct, $student, $self ) = @_;
       my ( $stu1, $stu2,$stu3,$stu4 ) = @{$student};
       my ( $c1, $c2, $c3, $c4 ) = @{$correct};
-      if ( ($c1 == $stu1) && ($c3 == $stu3) ) 
+      if ( ($c1 == $stu1) && ($c3 == $stu3) )
          {if ( ($c2 == $stu2) && ($c4 == $stu4) )
             {return [1,1,1,1];}
           elsif ($c2 == $stu2) {return [1,1,1,0]}
@@ -172,13 +172,13 @@ $BR
 $BBOLD PART 1: Separate $EBOLD
 $BR
 $BR
-We look for solutions of the form \(u(x,t) = X(x)T(t)\). 
+We look for solutions of the form \(u(x,t) = X(x)T(t)\).
 $BR
-Assuming solutions of this form the PDE can be written as 
+Assuming solutions of this form the PDE can be written as
 $BR
 $BCENTER \{$waveleft->ans_rule\} = \{$waveright->ans_rule\} $ECENTER
 $BR
-Then we can separate the PDE,placing constants in the DE into T: 
+Then we can separate the PDE,placing constants in the DE into T:
 $BR
 \{$Xdiff1->ans_rule\} = \{$Tdiff1->ans_rule\} = \(-\lambda\) (\(\lambda\) is typed as lambda)
 $BR
@@ -186,10 +186,10 @@ $BR
 The boundary conditions in the PDE translate into initial conditions for the differential equation in X:
 $BR
 
-Since these differential equations are independent of each other, they can be separated 
+Since these differential equations are independent of each other, they can be separated
 $BR
 DE in X: \{$Xdiff2->ans_rule\} \( = 0\)
-$BR IC's in X: 
+$BR IC's in X:
 $BR
 $BCENTER
 \(X^\prime(\)\{$multians->ans_rule(1)\}\() = \)\{$multians->ans_rule(1)\}
@@ -248,7 +248,7 @@ $BR
 \(X^\prime(L) = \)\{ans_rule\} \( = 0\)
 $BR
 Which leads us to the eigenvalues \(\lambda = \)\{ans_rule\}
-$BR 
+$BR
 $BBOLD Note $EBOLD If n = 0 we get the constant case from \(\lambda = 0\), including it would have been redundant.
 $BR
 $BR
@@ -257,7 +257,7 @@ $BBOLD PART 3: Solve for T $EBOLD
 $BR
 $BR
 $BR
-So the only case we need consider is the \(\lambda = \alpha^2\) case. Therefore the differential equation in T is now 
+So the only case we need consider is the \(\lambda = \alpha^2\) case. Therefore the differential equation in T is now
 $BR
 \{$Tdiff3->ans_rule\} \( = 0\)
 $BR
@@ -275,7 +275,7 @@ a^2\frac{\partial^2 u}{\partial x^2} = \frac{\partial^2 u}{\partial t^2}, 0< x <
 \[\displaystyle
 \frac{\partial u}{\partial x}\Big\vert_{x=0} = 0,\hskip 10pt \frac{\partial u}{\partial x}\Big\vert_{x=L} = 0, t > 0\]
 
-To add in the initial conditions we will have to use a series solution. For the series we relabel the coefficients so that \(C = A_n\) and \(D=B_n\) 
+To add in the initial conditions we will have to use a series solution. For the series we relabel the coefficients so that \(C = A_n\) and \(D=B_n\)
 $BR
  \(u(x,t) = \displaystyle\sum\limits_{n=0}^\infty \Bigg( A_n \)\{$cnt->ans_rule(13)\} \( + B_n \) \{$snt->ans_rule(13)\}\( \Bigg) \)\{$sn->ans_rule(12)\}
 $BR
@@ -318,7 +318,7 @@ $BR
 $BR
 $BBOLD PART 5: Finally! $EBOLD
 $BR
-$BR \(u(x,t) = \)\{$u0->ans_rule(4)\}+\(\displaystyle\sum\limits_{n=1}^\infty\)\{$un->ans_rule(80)\} 
+$BR \(u(x,t) = \)\{$u0->ans_rule(4)\}+\(\displaystyle\sum\limits_{n=1}^\infty\)\{$un->ans_rule(80)\}
 $BR
 
 END_TEXT
@@ -338,7 +338,7 @@ ANS($waveright->cmp() );
 ANS($Xdiff1->cmp);
 ANS($Tdiff1->cmp);
 ANS($Xdiff2->cmp);
-ANS( $multians->cmp() ); 
+ANS( $multians->cmp() );
 ANS($Tdiff2->cmp);
 ## Sturm-Louiville
 ANS($Xequal->cmp);
@@ -387,4 +387,4 @@ ANS($bn->cmp() );
 
 ANS($u0->cmp);
 ANS($un->cmp);
-ENDDOCUMENT();        
+ENDDOCUMENT();

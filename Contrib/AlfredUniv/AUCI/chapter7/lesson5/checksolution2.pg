@@ -11,9 +11,9 @@
 ## Date('12/16/09')
 ## Author('Darwyn Cook')
 ## Institution('Alfred University')
-## TitleText1('Differential Equations: with Boundary-Value Problems')
+## TitleText1('Differential Equations with Boundary-Value Problems')
 ## EditionText1('6')
-## AuthorText1('Zill')
+## AuthorText1('Zill, Cullen')
 ## Section1('1.3')
 ## Problem1('')
 
@@ -44,21 +44,21 @@ $d2y = $dy->D('t');
 
 $mc = new_checkbox_multiple_choice();
 $mc -> qa (
-"Therefore, \(y\) satisfies which of the following differential equations? Check all that apply.", 
-"\(y^{\prime} = $lambda y \)$BR", 
+"Therefore, \(y\) satisfies which of the following differential equations? Check all that apply.",
+"\(y^{\prime} = $lambda y \)$BR",
 "\( y^{\prime\prime} = $squared y \)$BR",
 );
 
 $mc -> makeLast(
-"\(y^{\prime} = $lambda y \)$BR", 
-"\(y^{\prime} = -$lambda y \)$BR",            
+"\(y^{\prime} = $lambda y \)$BR",
+"\(y^{\prime} = -$lambda y \)$BR",
 "\( y^{\prime\prime} = $squared y \)$BR",
 "\( y^{\prime\prime} = -$squared y \)$BR",
 );
 
 Context()->texStrings;
 BEGIN_TEXT
-If \(y(t) = $y\), 
+If \(y(t) = $y\),
 $BR
 $BR
 then \(y^\prime(t) = \) \{ans_rule\},

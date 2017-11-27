@@ -11,10 +11,10 @@
 ## KEYWORDS('proof', 'function', 'sets', 'image', 'preimage')
 ## TitleText1('Proof: Introduction to Higher Mathematics')
 ## EditionText1('7')
-## AuthorText1('Warren Esty', 'Norah Esty')
+## AuthorText1('Warren Esty, Norah Esty')
 ## Section1('')
 ## Problem1('')
-## Author('Warren Esty', 'Norah Esty')
+## Author('Warren Esty, Norah Esty')
 ## Institution('Montana State University', 'Stonehill College')
 
 DOCUMENT();

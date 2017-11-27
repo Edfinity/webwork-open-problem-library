@@ -10,8 +10,8 @@
 ## Institution(Alfred University)
 ## Author(Darwyn Cook)
 ## Level(3)
-## TitleText1('Differential Equations: with Boundary-Value Problems')
-## AuthorText1('Zill')
+## TitleText1('Differential Equations with Boundary-Value Problems')
+## AuthorText1('Zill, Cullen')
 ## EditionText1('6')
 ## Section1('12.2')
 ## Problem1('')
@@ -21,7 +21,7 @@
 
 ########################################################################
 
-DOCUMENT();      
+DOCUMENT();
 
 loadMacros(
   "PGstandard.pl",
@@ -45,7 +45,7 @@ $showPartialCorrectAnswers = 1;
 
 
 Context("ImplicitEquation");
-Context()->variables->add(t=>"Real",L=>"Real"); 
+Context()->variables->add(t=>"Real",L=>"Real");
 Context()->constants->add(a=>1,b=>1);
 
 parserFunction("u(x,t)"=>"x+t");
@@ -82,7 +82,7 @@ Left end is insulated \($u0\): \{ans_rule(15)\}
 $BR
 Right end is insulated \($u1\): \{ans_rule(15)\}
 $BR
-Initial temperature is \($initialtemp\): \{ans_rule(15)\} 
+Initial temperature is \($initialtemp\): \{ans_rule(15)\}
 
 END_TEXT
 
@@ -111,4 +111,4 @@ $initcond = ImplicitEquation("u(x,0)=$initialtemp");
 ANS($initcond->cmp());
 
 
-ENDDOCUMENT();        
+ENDDOCUMENT();

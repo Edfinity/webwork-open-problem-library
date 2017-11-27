@@ -10,15 +10,15 @@
 ## Date('12/23/2009')
 ## Author('Darwyn Cook')
 ## Institution('Alfred University')
-## TitleText1('Differential Equations: with Boundary-Value Problems')
+## TitleText1('Differential Equations with Boundary-Value Problems')
 ## EditionText1('6')
-## AuthorText1('Zill')
+## AuthorText1('Zill, Cullen')
 ## Section1('')
 ## Problem1('')
 
 ########################################################################
 
-DOCUMENT();      
+DOCUMENT();
 
 loadMacros(
   "PGstandard.pl",
@@ -40,8 +40,8 @@ $showPartialCorrectAnswers = 0;
 # Make a new checkbox multiple choice
 $cmc = new_checkbox_multiple_choice();
 $cmc -> qa (
-"Check all that apply to the differential equation \(\frac{d^3y}{dx^3}+5\left(\frac{dy}{dx}\right)^3-4y=0\)",  
-"third order",               
+"Check all that apply to the differential equation \(\frac{d^3y}{dx^3}+5\left(\frac{dy}{dx}\right)^3-4y=0\)",
+"third order",
 "ODE",
 
 );
@@ -85,4 +85,4 @@ ANS(checkbox_cmp($cmc->correct_ans));
 
 
 
-ENDDOCUMENT();        
+ENDDOCUMENT();

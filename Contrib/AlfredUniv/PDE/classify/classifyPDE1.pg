@@ -10,15 +10,15 @@
 ## Date('7/21/2011')
 ## Author('Darwyn Cook')
 ## Institution('Alfred University')
-## TitleText1('Differential Equations: with Boundary-Value Problems')
+## TitleText1('Differential Equations with Boundary-Value Problems')
 ## EditionText1('6')
-## AuthorText1('Zill')
+## AuthorText1('Zill, Cullen')
 ## Section1('12.1')
 ## Problem1('')
 
 ########################################################################
 
-DOCUMENT();      
+DOCUMENT();
 
 loadMacros(
   "PGstandard.pl",
@@ -85,7 +85,7 @@ else {$opposite = String("separable");};
 ## Make a new checkbox multiple choice
 $cmc = new_checkbox_multiple_choice();
 $cmc -> qa (
-"", 
+"",
 $correct,
 $separability
 );
@@ -123,4 +123,4 @@ ANS(checkbox_cmp($cmc->correct_ans));
 
 
 
-ENDDOCUMENT();        
+ENDDOCUMENT();

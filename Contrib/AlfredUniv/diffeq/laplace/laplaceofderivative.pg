@@ -4,8 +4,8 @@
 ## Library/ma123DB/set2/s7_1_7.pg
 ##ENDDESCRIPTION
 
-## 
-## 
+##
+##
 
 ## DBsubject('Calculus')
 ## DBchapter('Differential Equations')
@@ -15,7 +15,7 @@
 ## Institution('Alfred University')
 ## TitleText1('')
 ## EditionText1('')
-## AuthorText1('Zill')
+## AuthorText1('Zill, Cullen')
 ## Section1('')
 ## Problem1('')
 
@@ -51,7 +51,7 @@ TEXT(beginproblem());
 
 Context()->texStrings;
 BEGIN_TEXT
-Find the formula for the Laplace transform of the derivative of a function \(y^\prime\). Use the initial condition \(y(0) = y0\), use \(y\) and \(y^\prime\) respectively for \(y(t)\) and \(y^\prime (t)\) and \(Y\) for the Laplace transform of \(y\). 
+Find the formula for the Laplace transform of the derivative of a function \(y^\prime\). Use the initial condition \(y(0) = y0\), use \(y\) and \(y^\prime\) respectively for \(y(t)\) and \(y^\prime (t)\) and \(Y\) for the Laplace transform of \(y\).
 $BR
 \(\displaystyle
 L\lbrace y^{\prime}(t)\rbrace(s)=\int_0^\infty e^{-st}y^\prime(t) dt\)

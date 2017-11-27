@@ -212,7 +212,7 @@ ENDDOCUMENT();  # This should be the last executable line in the problem.
 ## Institution('Alfred University')
 ## TitleText1('Differential Equations with Boundary-Value Problems')
 ## EditionText1('7')
-## AuthorText1('Zill and Cullen')
+## AuthorText1('Zill, Cullen')
 ## Section1('4.7-CauchyEulerEquations')
 ## Problem1('')
 

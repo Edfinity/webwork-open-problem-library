@@ -1,5 +1,5 @@
 ##DESCRIPTION
-##  Algebra problem: true or false for inequality 
+##  Algebra problem: true or false for inequality
 ##ENDDESCRIPTION
 
 ##KEYWORDS('PDE', 'wave', 'equation')
@@ -10,14 +10,14 @@
 ## Date('7/25/2011')
 ## Author('Darwyn Cook')
 ## Institution('Alfred University')
-## TitleText1('Differential Equations')
+## TitleText1('Differential Equations with Boundary-Value Problems')
 ## EditionText1('6')
-## AuthorText1('Zill')
+## AuthorText1('Zill, Cullen')
 ## Section1('12.3')
 ## Problem1('')
 ########################################################################
 
-DOCUMENT();      
+DOCUMENT();
 
 loadMacros(
   "PGstandard.pl",
@@ -122,7 +122,7 @@ ANS(Formula("2")->cmp() );
 ANS(Formula("0")->cmp() );
 ANS(Formula("pi")->cmp() );
 ANS(Formula("x*(pi^2-x^2)*$sn/6")->cmp() );
-ANS($An->cmp); 
+ANS($An->cmp);
 
 ANS(Formula("n*pi*a")->cmp() );
 ANS(Formula("2")->cmp() );
@@ -130,4 +130,4 @@ ANS(Formula("0")->cmp() );
 ANS(Formula("pi")->cmp() );
 ANS(Formula("$g*$sn")->cmp() );
 ANS($Bn->cmp);
-ENDDOCUMENT();        
+ENDDOCUMENT();

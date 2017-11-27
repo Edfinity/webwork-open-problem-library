@@ -1,5 +1,5 @@
 ##DESCRIPTION
-##  Algebra problem: true or false for inequality 
+##  Algebra problem: true or false for inequality
 ##ENDDESCRIPTION
 
 ##KEYWORDS('PDE', 'wave', 'equation')
@@ -10,14 +10,14 @@
 ## Date('7/25/2011')
 ## Author('Darwyn Cook')
 ## Institution('Alfred University')
-## TitleText1('Differential Equations')
+## TitleText1('Differential Equations with Boundary-Value Problems')
 ## EditionText1('6')
-## AuthorText1('Zill')
+## AuthorText1('Zill, Cullen')
 ## Section1('12.3')
 ## Problem1('')
 ########################################################################
 
-DOCUMENT();      
+DOCUMENT();
 
 loadMacros(
   "PGstandard.pl",
@@ -70,8 +70,8 @@ $f = Formula("0");# this will be the correct answer
 for (my $n=1;$n<8;$n++){
 $an= $An->eval(n=>"$n",L=>"$L",a=>"$a");
 $bn = $Bn->eval(n=>"$n",L=>"$L",a=>"$a");
-$f = Formula("$f+($an*cos($n*pi*$a*t/$L)+$bn*sin($n*pi*$a*t/$L))*sin($n*pi*x/$L)"); 
-}; 
+$f = Formula("$f+($an*cos($n*pi*$a*t/$L)+$bn*sin($n*pi*$a*t/$L))*sin($n*pi*x/$L)");
+};
 
 ##############################################################
 #
@@ -93,7 +93,7 @@ u(0,t) = 0, u(L,t) = 0, t > 0\)
 $BR
 $BR
 \(\displaystyle
-u(x,0) = 
+u(x,0) =
 \begin{cases}
 $f1, &0 < x < \frac{L}{2}\\
 $f2, &\frac{L}{2}<x<L\\
@@ -146,7 +146,7 @@ ANS(Formula($context,"sin(n*pi*x/L)")->cmp() );
 ANS(Formula($context,"-2/(n*pi)*cos(n*pi*x/L)")->cmp() );
 ANS(Formula($context,"L/2")->cmp() );
 ANS(Formula($context,"L")->cmp() );
-ANS($An->cmp); 
+ANS($An->cmp);
 
 ANS(Formula($context,"n*pi*a")->cmp() );
 ANS(Formula($context,"2")->cmp() );
@@ -155,4 +155,4 @@ ANS(Formula($context,"L")->cmp() );
 ANS(Formula($context,"$g*sin(n*pi*x/L)")->cmp() );
 ANS($Bn->cmp);
 
-ENDDOCUMENT();        
+ENDDOCUMENT();
