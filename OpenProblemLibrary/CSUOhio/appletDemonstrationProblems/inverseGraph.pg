@@ -1,7 +1,7 @@
 ##DESCRIPTION
 ##  Inverse Graph
-##    Sample problem to illustrate 
-##    the use of the InverseGraph.swf 
+##    Sample problem to illustrate
+##    the use of the InverseGraph.swf
 ##    Flash applet
 ##ENDDESCRIPTION
 
@@ -13,15 +13,15 @@
 ## Institution(Cleveland State University)
 ## Author(Alex Yates)
 ## Level(2)
-## TitleText1('Calculus: Early Transcendentals 2e')
+## TitleText1('Calculus: Early Transcendentals')
 ## AuthorText1('Rogawski')
 ## EditionText1('2')
 ## Section1('3.8')
 ## Problem1('9')
 ## KEYWORDS('calculus','derivatives', 'inverse functions')
 ###########################################
-# This work is supported in part by 
-# the National Science Foundation 
+# This work is supported in part by
+# the National Science Foundation
 # under the grant DUE-0941388.
 ###########################################
 
@@ -47,9 +47,9 @@ $fder = $f->D('x');
 $ans2 = 1/($fder->substitute(x=>$f_inv->substitute(x=>$b)));
 
     ###################################
-    # Create link to applet 
+    # Create link to applet
     ###################################
-    
+
     $appletName = "InverseGraph";
     $applet =  FlashApplet(
        codebase              => findAppletCodebase("$appletName.swf"),

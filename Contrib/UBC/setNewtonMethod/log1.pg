@@ -23,7 +23,7 @@ $df = $f->D;
 
 # What is the initial guess
 $x[0] = 3;
-# How many iterations Newton’s Method do you want
+# How many iterations Newton's Method do you want
 $n = 3;
 
 for my $i (1..$n)

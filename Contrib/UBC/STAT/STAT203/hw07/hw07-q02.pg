@@ -38,7 +38,7 @@ $mc[0]->qa("What kind of study is this?",
 "An experiment because the study investigator controlled the amount of exposure to advertisements the participating students received.");
 
 $mc[0]->extra(
-   "An observational study because the study investigator observed the students’ ratings on their craving for the Sub-U-Like sandwich.",
+   "An observational study because the study investigator observed the students' ratings on their craving for the Sub-U-Like sandwich.",
    "An observational study because there was no control group.",
    "An experiment because the study investigator compared the degree of craving between different
 amounts of exposure to advertisements in the study."

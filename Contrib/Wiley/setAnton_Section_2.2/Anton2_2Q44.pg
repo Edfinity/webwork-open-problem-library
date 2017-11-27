@@ -46,7 +46,7 @@ BEGIN_TEXT
 The accompanying figure shows the velocity versus time curve for a rocket in outer space where the only significant force on the rocket is from its engines. It can be shown that the mass \(M(t)\) (in slugs) of the rocket at time \(t\) seconds satisfies the equation
 \[M(t) =\frac{T}{dv/dt}\]
 
-where \(T\) is the thrust (in lb) of the rocket’s engines and \(v\) is the velocity (in \(ft/s\)) of the rocket. The thrust of the first stage of a Saturn V rocket is \(T = $T\) lb. Use this value of \(T\) and the line segment in the figure to estimate the mass of the rocket at time \(t = $t\).
+where \(T\) is the thrust (in lb) of the rocket's engines and \(v\) is the velocity (in \(ft/s\)) of the rocket. The thrust of the first stage of a Saturn V rocket is \(T = $T\) lb. Use this value of \(T\) and the line segment in the figure to estimate the mass of the rocket at time \(t = $t\).
 $PAR
 $BCENTER
 (click to enlarge)$BR

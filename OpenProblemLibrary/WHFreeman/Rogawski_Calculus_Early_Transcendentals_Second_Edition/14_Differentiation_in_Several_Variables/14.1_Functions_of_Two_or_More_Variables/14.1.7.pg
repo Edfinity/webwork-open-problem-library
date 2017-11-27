@@ -6,7 +6,7 @@
 ## MLT(ndr_domain)
 ## MLTleader(1)
 ## Level(2)
-## TitleText1('Calculus Early Transcendentals')
+## TitleText1('Calculus: Early Transcendentals')
 ## AuthorText1('Rogawski')
 ## EditionText1('2')
 ## Section1('14.1')
@@ -134,7 +134,7 @@ if ($g3->eval(x=>-1,y=>1) > 0) {
 }
 if ($g3->eval(x=>-1,y=>-1) > 0) {
   $graph3->fillRegion([-1,-1,'yellow']);
-}  
+}
 
 $graph4->fillRegion([1,0,'yellow']);
 $f4_graph = "-$a1*x/$b1 for x in [-$a,$a] using color:white and weight:6";
@@ -190,7 +190,7 @@ $PAR
 The domain of \(\{$f3->TeX\}\) is the region \(\{$g3->TeX\} \geq 0\). The domain will include the lines \(x = 0\) and \(y = 0\). The factor \(x^{$n1}\) is positive \{if (($n1 % 2) == 0) { "for all nonzero \(x\) and is never negative"}{ "for all positive \(x\) and negative for all negative \(x\)"}\}. The factor \(y^{$n2}\) is positive \{if (($n2 % 2) == 0) { "for all nonzero \(y\) and is never negative"}{ "for all positive \(y\) and negative for all negative \(y\)"}\}. The product is positive if both factors are positive, or both factors are negative. This occurs in Quadrant I and \{if ((($n1 % 2) != 0)&&(($n2 % 2) != 0)) {"Quadrant III"} elsif (($n1 % 2) == 0) {"Quadrant II"} else {"Quadrant IV"}\}.
 
 $PAR
-The domain of \(\{$f4->TeX\}\) is the same as the domain of the exponent. This means that the domain is the same as the domain of \(\{$g4->TeX\}\), which is the set line \(\{$g1->TeX\} \neq 0\). Thus, the domain is entire plane except for the line \(\{$g1->TeX\} = 0\). 
+The domain of \(\{$f4->TeX\}\) is the same as the domain of the exponent. This means that the domain is the same as the domain of \(\{$g4->TeX\}\), which is the set line \(\{$g1->TeX\} \neq 0\). Thus, the domain is entire plane except for the line \(\{$g1->TeX\} = 0\).
 END_SOLUTION
 
 

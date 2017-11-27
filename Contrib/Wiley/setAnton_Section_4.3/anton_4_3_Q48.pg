@@ -105,7 +105,7 @@ TEXT(beginproblem());
 Context()->texStrings;
 BEGIN_TEXT
 $PAR
-Using L’Hôpital’s rule (Section 3.6) one can verify that
+Using L'Hôpital's rule (Section 3.6) one can verify that
 \(\displaystyle \lim_{x\to+\infty} \frac{e^x}{x}=+\infty\), 
 
 \(\displaystyle \lim_{x\to+\infty} \frac{x}{e^{x}}=0\), 

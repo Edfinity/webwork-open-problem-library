@@ -5,7 +5,7 @@
 ## KEYWORDS('derivative')
 ## DBsubject('Calculus')
 ## DBchapter('Principles of Integral Evaluation')
-## DBsection('Numerical Integration; Simpson’s Rule')
+## DBsection('Numerical Integration; Simpson's Rule')
 ## TitleText1('Calculus')
 ## EditionText1('9') 
 ## AuthorText1('Anton')
@@ -85,7 +85,7 @@ BEGIN_TEXT
 Approximate the integral using $BR
 (a) The midpoint approximation \(M_{10}\), $BR
 (b) The trapezoidal approximation \(T_{10}\), and $BR
-(c) Simpson’s rule approximation \(S_{20}\) using Formula (7) (Page 538 of the text). $PAR
+(c) Simpson's rule approximation \(S_{20}\) using Formula (7) (Page 538 of the text). $PAR
 
 Find the exact value of the integral and approximate the absolute error for each case. Express your final approximation answers to six decimal places use non-rounded values to calculate the error functions expressing each to six decimal places.$PAR
 

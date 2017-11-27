@@ -12,12 +12,12 @@
 ## MLT(PartFracConstOverSimple)
 ## Level(2)
 ## MO(1)
-## TitleText1('HH')
-## AuthorText1('HH')
+## TitleText1('Calculus: Single Variable')
+## AuthorText1('Hughes-Hallett')
 ## EditionText1('4')
 ## Section1('7.4')
 ## Problem1('40')
-## KEYWORDS('integrals', 'trigonometric', 'substitsution')
+## KEYWORDS('integrals', 'trigonometric', 'substitution')
 
 
 DOCUMENT();        # This should be the first executable line in the problem.
@@ -46,9 +46,9 @@ $d=$a*$b;
 $answer = FormulaUpToConstant("(1/($b-$a)*ln(x+$a))+(1/($a-$b)*ln(x+$b))");
 
 BEGIN_TEXT
-Evaluate the indefinite integral 
+Evaluate the indefinite integral
 $BR
-$BR 
+$BR
 \( \displaystyle \int \frac{ dx}{x^2 + $c x +$d} \) =
 \{ans_rule(50) \}
 END_TEXT

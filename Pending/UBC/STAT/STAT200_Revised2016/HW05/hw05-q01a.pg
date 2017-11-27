@@ -110,11 +110,11 @@ $mc4 = new_multiple_choice();
 
 $mc4->qa(
   "What is the purpose of performing the treatment randomization and comparison for the urban and rural residents separately? Choose the most appropriate answer.",
-  "To control for the effect of area of residence on the residents’ willingness to switch to taking public transit.",
+  "To control for the effect of area of residence on the residents' willingness to switch to taking public transit.",
 );
 
 $mc4->extra(
-"To evaluate the effect of area of residence on the residents’ willingness to switch to taking public transit.",
+"To evaluate the effect of area of residence on the residents' willingness to switch to taking public transit.",
 "To ensure that both urban and rural residents can participate in the study.",
 );
 

@@ -135,11 +135,11 @@ $part4_answer  = Real(normal_prob( -infty, $nconven/100, mean=>0.80, deviation =
 
 ######################################################
 # Part 5
-$mc5_answer       = "The passing rate for students taught using the conventional method this year is not significantly lower than last year’s.";
+$mc5_answer       = "The passing rate for students taught using the conventional method this year is not significantly lower than last year's.";
 
-$mc5_distractor1 = "The passing rate for students taught using the conventional method this year is significantly lower than last year’s.";
+$mc5_distractor1 = "The passing rate for students taught using the conventional method this year is significantly lower than last year's.";
 
-$mc5_distractor2 = "The passing rate for students taught using the conventional method this year is the same as last year’s.";
+$mc5_distractor2 = "The passing rate for students taught using the conventional method this year is the same as last year's.";
 
 $mc5_distractor3 = "Both (b) and (c).";
 

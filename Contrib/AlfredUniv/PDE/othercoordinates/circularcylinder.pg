@@ -1,5 +1,5 @@
 ##DESCRIPTION
-##  Algebra problem: true or false for inequality 
+##  Algebra problem: true or false for inequality
 ##ENDDESCRIPTION
 
 ##KEYWORDS('heat', 'wave', 'polar', 'cylindrical', laplacian)
@@ -10,7 +10,7 @@
 ## Date('10/22/2011')
 ## Author('Darwyn Cook')
 ## Institution('Alfred University')
-## TitleText1('Differential Equations')
+## TitleText1('Differential Equations with Boundary-Value Problems')
 ## EditionText1('6')
 ## AuthorText1('Zill, Cullen')
 ## Section1('13.2')
@@ -18,7 +18,7 @@
 
 ########################################################################
 
-DOCUMENT();      
+DOCUMENT();
 
 loadMacros(
   "PGstandard.pl",
@@ -78,4 +78,4 @@ Context()->normalStrings;
 #
 
 
-ENDDOCUMENT();        
+ENDDOCUMENT();

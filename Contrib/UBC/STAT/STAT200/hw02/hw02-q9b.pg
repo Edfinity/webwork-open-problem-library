@@ -50,7 +50,7 @@ $radio = RadioButtons(
 #######
 
 BEGIN_TEXT
-An analyst working for a telecommunications company has been asked to gauge the stress on its cellular networks due to the increasing use of smartphones. She decides to first look at the relationship between the number of minutes customers spent talking on their phones and the amount of cellular data they use. She collects a month’s worth of data on 300 customers who have smartphones with data plans and fits a least squares regression line to the data, with the data usage as the response variable.
+An analyst working for a telecommunications company has been asked to gauge the stress on its cellular networks due to the increasing use of smartphones. She decides to first look at the relationship between the number of minutes customers spent talking on their phones and the amount of cellular data they use. She collects a month's worth of data on 300 customers who have smartphones with data plans and fits a least squares regression line to the data, with the data usage as the response variable.
 
 $BR
 

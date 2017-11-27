@@ -6,13 +6,13 @@
 # WeBWorK problem written by Warren Esty and Norah Esty
 # ENDDESCRIPTION
 
-## DBsubject(‘Discrete Math’)
-## DBchapter(‘Logic’)
-## DBsection(‘Quantifiers’)
-## KEYWORDS('proof’, ‘quantifiers’, ‘existence’)
-## TitleText1(‘Proof: Introduction to Higher Mathematics’)
-## EditionText1(‘7’)
-## AuthorText1(‘Warren Esty’, ‘Norah Esty’)
+## DBsubject('Discrete Math')
+## DBchapter('Logic')
+## DBsection('Quantifiers')
+## KEYWORDS('proof', 'quantifiers', 'existence')
+## TitleText1('Proof: Introduction to Higher Mathematics')
+## EditionText1('7')
+## AuthorText1('Warren Esty', 'Norah Esty')
 ## Section1('1.1')
 ## Problem1('')
 ## Author('Warren Esty', 'Norah Esty')

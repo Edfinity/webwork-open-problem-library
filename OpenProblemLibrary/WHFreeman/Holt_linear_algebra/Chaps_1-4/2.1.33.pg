@@ -52,11 +52,11 @@ Fertilizer is sold in 100 pound bags labelled with the amount of nitrogen ( N), 
 $PAR
 For example, a \(100\) pound bag of Vigoro Ultra Turf fertilizer contains \(29\) pounds of nitrogen, \(3\) pounds of phosphoric acid, and \(4\) pounds of potash. 
 $PAR
-Another type of fertilizer, Parker’s Premium Starter, has \(18\) pounds of nitrogen, \(25\) pounds of phosphoric acid, and \(6\) pounds of potash per \(100\) pounds. 
+Another type of fertilizer, Parker's Premium Starter, has \(18\) pounds of nitrogen, \(25\) pounds of phosphoric acid, and \(6\) pounds of potash per \(100\) pounds. 
 $PAR
 Determine the amount of each type required to yield a mixture containing the \($an1\) pounds of nitrogen, \($an2\) pounds of phosphoric acid, and \($an3\) pounds of potash.
 $PAR
-The mixture contains \{ans_rule(10)\} pounds of Vigoro, and \{ans_rule(10)\} pounds of Parker’s.
+The mixture contains \{ans_rule(10)\} pounds of Vigoro, and \{ans_rule(10)\} pounds of Parker's.
 
 $PAR
 

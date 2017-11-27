@@ -207,7 +207,7 @@ $mc7->extra(
 
 Context()->texStrings;
 BEGIN_TEXT
-A report says that 82$PERCENT of British Columbians over the age of 25 are high school graduates. A survey of randomly selected residents of a certain city included 1290 who were over the age of 25, and 1135 of them were high school graduates. Does the city’s survey result provide sufficient evidence to contradict the reported value, 82$PERCENT?
+A report says that 82$PERCENT of British Columbians over the age of 25 are high school graduates. A survey of randomly selected residents of a certain city included 1290 who were over the age of 25, and 1135 of them were high school graduates. Does the city's survey result provide sufficient evidence to contradict the reported value, 82$PERCENT?
 
 $PAR
 

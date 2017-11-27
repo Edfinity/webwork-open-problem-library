@@ -104,7 +104,7 @@ TEXT(beginproblem());
 Context()->texStrings;
 BEGIN_TEXT
 $PAR
-Using L’Hôpital’s rule (Section 3.6) one can verify that
+Using L'Hôpital's rule (Section 3.6) one can verify that
 \(\displaystyle \lim_{x\to+\infty} \frac{\ln {x}}{x^{r}}=0\), 
 
 \(\displaystyle \lim_{x\to+\infty} \frac{x^{r}}{\ln {x}}=+\infty\), 

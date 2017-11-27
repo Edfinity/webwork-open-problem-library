@@ -1,5 +1,5 @@
 ##DESCRIPTION
-##  Algebra problem: true or false for inequality 
+##  Algebra problem: true or false for inequality
 ##ENDDESCRIPTION
 
 
@@ -10,7 +10,7 @@
 ## Institution(Alfred University)
 ## Author(Darwyn Cook)
 ## Level(5)
-## TitleText1('Differential Equations')
+## TitleText1('Differential Equations with Boundary-Value Problems')
 ## AuthorText1('Zill, Cullen')
 ## EditionText1('6')
 ## Section1('13.2')
@@ -19,7 +19,7 @@
 
 ########################################################################
 
-DOCUMENT();      
+DOCUMENT();
 
 loadMacros(
   "PGstandard.pl",
@@ -69,14 +69,14 @@ BEGIN_TEXT
 Type \(\alpha_n\) as alphan
 $BR
 $BR
-$BBOLD Notes $EBOLD 
+$BBOLD Notes $EBOLD
 $BR
 \(\displaystyle\int_0^c rJ_0(r) dr = cJ_1(c)\)
 $BR
 In Wolfram alpha, "Solve J0(x) = 0 from 0 to 10" will give the solutions for \(J_0(x) = 0\) for \(0\leq x\leq 10\).
 $BR
 $BR
-$BBOLD Problem $EBOLD 
+$BBOLD Problem $EBOLD
 $BR
 A circular membrane with radius \($r\) has height u(r,t) at distance r from the center and time t. The membrane has radial symmetry, clamped edges, initial displacement 0, and initial velocity  \($iv\). Then u satisfies the following boundary value problem:
 $BR
@@ -209,4 +209,4 @@ ANS(Compute("$r*$alpha[4]^2")->cmp() );
 ANS(Compute("$r*$alpha[4]")->cmp() );
 ANS(Compute("a*$alpha[4]*t")->cmp() );
 ANS(Compute("$alpha[4]*r")->cmp() );
-ENDDOCUMENT();        
+ENDDOCUMENT();

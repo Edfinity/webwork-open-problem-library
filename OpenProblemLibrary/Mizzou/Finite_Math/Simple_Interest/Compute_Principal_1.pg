@@ -53,7 +53,7 @@ $ans = $i/(($r/100) * ($d/360));
 Context()->texStrings;
 BEGIN_TEXT
 
-An electric company charges \($r $PERCENT \) simple interest on overdue accounts. If a customer is charged \($i\) after \($d\) days for an overdue bill, for what amount was the customer’s original bill?
+An electric company charges \($r $PERCENT \) simple interest on overdue accounts. If a customer is charged \($i\) after \($d\) days for an overdue bill, for what amount was the customer's original bill?
 
 $PAR
 \{ANS_RULE(10)\} 

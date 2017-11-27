@@ -10,12 +10,12 @@
 ## Author(Dick Lane)
 ## MLT(tSQ)
 ## Level(4)
-## TitleText1('Calculus: Early Transcendentals 2e')
+## TitleText1('Calculus: Early Transcendentals')
 ## AuthorText1('Rogawski')
 ## EditionText1('2')
 ## Section1('11.4')
 ## Problem1('25')
-## KEYWORDS('calculus', 'area', ‘arc length’)
+## KEYWORDS('calculus', 'area', 'arc length')
 
 DOCUMENT();
 loadMacros(

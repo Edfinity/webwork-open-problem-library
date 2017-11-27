@@ -16,7 +16,7 @@ $context = Context();
 ## MLT(ParSAwithTrig)
 ## Level(3)
 ## MO(1)
-## TitleText1('Calculus: Early Transcendentals 2e')
+## TitleText1('Calculus: Early Transcendentals')
 ## AuthorText1('Rogawski')
 ## EditionText1('2')
 ## Section1('11.2')

@@ -13,7 +13,7 @@
 ## MLT(eq_pt_02)
 ## Level(4)
 ## MO(1)
-## TitleText1('Differential Equations')
+## TitleText1('A Modern Introduction to Differential Equations')
 ## AuthorText1('Ricardo')
 ## EditionText1('2')
 ## Section1('.')
@@ -22,7 +22,7 @@
 
 ########################################################################
 
-DOCUMENT();      
+DOCUMENT();
 
 loadMacros(
   "PGstandard.pl",
@@ -34,23 +34,23 @@ loadMacros(
   "PGcourse.pl"
 );
 
-sub BPINK { 
-  MODES(TeX => '{\\color{pink} ', HTML => '<span style="color:pink">'); 
+sub BPINK {
+  MODES(TeX => '{\\color{pink} ', HTML => '<span style="color:pink">');
 };
-sub EPINK { 
-  MODES( TeX => '}', HTML => '</span>'); 
+sub EPINK {
+  MODES( TeX => '}', HTML => '</span>');
 };
-sub BBLUE { 
-  MODES(TeX => '{\\color{blue} ', HTML => '<span style="color:blue">'); 
+sub BBLUE {
+  MODES(TeX => '{\\color{blue} ', HTML => '<span style="color:blue">');
 };
-sub EBLUE { 
-  MODES( TeX => '}', HTML => '</span>'); 
+sub EBLUE {
+  MODES( TeX => '}', HTML => '</span>');
 };
-sub BYELLOW { 
-  MODES(TeX => '{\\color{yellow} ', HTML => '<span style="color:yellow">'); 
+sub BYELLOW {
+  MODES(TeX => '{\\color{yellow} ', HTML => '<span style="color:yellow">');
 };
-sub EYELLOW { 
-  MODES( TeX => '}', HTML => '</span>'); 
+sub EYELLOW {
+  MODES( TeX => '}', HTML => '</span>');
 };
 
 # Print problem number and point value (weight) for the problem
@@ -105,7 +105,7 @@ $pinkMax = $pinkICy;
 $pinkMin = $a;
 #+++++++++++++++++++++++++++++++++++++++++++++
 # Designate characteristics of blue curve
-# min is IC, max is $a; concave down on (IC,$a); increasing on (IC,$a) 
+# min is IC, max is $a; concave down on (IC,$a); increasing on (IC,$a)
 # note intervals are in y not t
 $blueICy = Compute("$a/2");
 $blueIntervalsIncLow = $blueICy;
@@ -123,7 +123,7 @@ $yellowMax = $yellowICy;
 $yellowMin = $yellowICy;
 
 ###################################
-# Create  link to applet 
+# Create  link to applet
 ###################################
     $appletName = "sketch_3";
     $applet =  FlashApplet(
@@ -140,7 +140,7 @@ $yellowMin = $yellowICy;
        width                 => '650',
        bgcolor               => '#ededed',
        debugMode             =>  0,
-       submitActionScript  =>  
+       submitActionScript  =>
   qq{getQE("answerBox").value=getApplet("$appletName").getAnswer() },
      );
 ###################################
@@ -179,7 +179,7 @@ ENDCONFIG
 
 $applet->configuration($config_string);
 $applet->initialState($config_string);
- 
+
 TEXT(MODES(TeX=>"", HTML=><<'END_TEXT'));
 <script>
 if (navigator.appVersion.indexOf("MSIE") > 0) {
@@ -208,8 +208,8 @@ a) For what values of \(y\) is the graph of \(y\) as a function of \(t\) increas
 $BR
 $BR
 
-b) For what values of \(y\) is the graph of \(y\) concave up? \{ ans_rule(30) \} \{AnswerFormatHelp("intervals") \}   $BR 
-For what values of \(y\) is it concave down? \{ ans_rule(30) \} \{AnswerFormatHelp("intervals") \} 
+b) For what values of \(y\) is the graph of \(y\) concave up? \{ ans_rule(30) \} \{AnswerFormatHelp("intervals") \}   $BR
+For what values of \(y\) is it concave down? \{ ans_rule(30) \} \{AnswerFormatHelp("intervals") \}
 $BR
 What information do you need to answer a question about concavity?  Remember that \(y\) is an implicit function of \(t\).  $BR
 $BR
@@ -235,7 +235,7 @@ e) Sketch the graph of \(y\) if \(y(0)=$yellowICy\).  (Look at the original equa
 $BR
 $BR
 
-f) If \(y(t)\) represents the population of some animal species, and if units on the \(y-\)axis are in thousands, interpret the results of (c), (d) and (e).  
+f) If \(y(t)\) represents the population of some animal species, and if units on the \(y-\)axis are in thousands, interpret the results of (c), (d) and (e).
 $BR
 The solution to part (c) (sketched in $BBOLD\{ BBLUE() \} blue\{ EBLUE() \}$EBOLD) represents: \{ $popup1->menu() \}$BR
 $BR
@@ -271,4 +271,4 @@ ANS( $popup3->cmp() );
 
 COMMENT('This problem requires that Flash be enabled on your device.  Click try it to see what students will see.');
 
-ENDDOCUMENT();        
+ENDDOCUMENT();

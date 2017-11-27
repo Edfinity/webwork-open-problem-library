@@ -12,14 +12,14 @@
 ## MLT(Exact_Initial_Value)
 ## Level(3)
 ## MO(1)
-## TitleText1('A First Course in Differential Equation')
+## TitleText1('A First Course in Differential Equations')
 ## AuthorText1('Dennis G.Zill')
 ## EditionText1('9')
 ## Section1('2.4')
 ## Problem1('21')
-## KEYWORDS('Differential equaltion')
+## KEYWORDS('Differential equation')
 
-DOCUMENT();      
+DOCUMENT();
 
 loadMacros(
   "PGstandard.pl",
@@ -57,16 +57,16 @@ $dy = Formula("2xy+x^{2}-1")->reduce;
 Context()->texStrings;
 BEGIN_TEXT
 
-Solve the following initial-value problem: 
+Solve the following initial-value problem:
 $BR
 $BR
 \(\displaystyle (x+y)^{2}dx+(2xy+x^{2}-1)dy=0, \ y(1)=$a\)
 
 $BR
 $BR
-\{ ans_rule(30) \} 
+\{ ans_rule(30) \}
 =
-0. 
+0.
 \{ AnswerFormatHelp("formulas") \}
 
 
@@ -97,5 +97,4 @@ ANS(  $answer->cmp(checker => sub {
 ;
 
 
-ENDDOCUMENT();        
-    
+ENDDOCUMENT();

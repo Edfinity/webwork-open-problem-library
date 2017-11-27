@@ -86,7 +86,7 @@ $q1mc -> extra(
 $q3mc = new_multiple_choice();
 $q3mc -> qa(
 "If we were to modify the method applied with a view to forecasting, which approach would you adopt from the following?",
-"Holt’s exponential smoothing."
+"Holt's exponential smoothing."
 );
 $q3mc -> extra(
 "Holt–Winters smoothing.", 
@@ -169,7 +169,7 @@ FALSE, level = 0.95) = $data[1]
 $BR
 $BR
 $BBOLD Part (d) $EBOLD
-Given that the observed series may have an upward trend but no obvious seasonal effect (as noted from the acf anyway), it seems natural to consider Holt’s (double) exponential smoothing.
+Given that the observed series may have an upward trend but no obvious seasonal effect (as noted from the acf anyway), it seems natural to consider Holt's (double) exponential smoothing.
 $BR
 $BR
 $BBOLD Part (e) $EBOLD

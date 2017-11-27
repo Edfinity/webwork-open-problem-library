@@ -93,7 +93,7 @@ BEGIN_TEXT
 $BR
 Suppose that you are in the garden supply business. Naturally,
 one of the things that you sell is fertilizer. You have three brands
-available: Vigoro, Parker’s, and Bleyer’s. The amount of nitrogen, phosphoric
+available: Vigoro, Parker's, and Bleyer's. The amount of nitrogen, phosphoric
 acid, and potash per 100 pounds for each brand is given by
 the nutrient vectors
 
@@ -101,7 +101,7 @@ $BR
 \{ 
 BeginTable(border=>0, tex_border=>"0pt", spacing=>0, padding=>4).
 AlignedRow(["\(v = $v\)","\(p = $p\)","\(b = $b\)"], align=>LEFT, separation=>0).
-AlignedRow(["Vigoro","Parker’s","Bleyer’s"], separation=>0).
+AlignedRow(["Vigoro","Parker's","Bleyer's"], separation=>0).
 EndTable()
 \}
 
@@ -113,7 +113,7 @@ input and gives the nutrient vector as output.
 $BR
 \(T(\textbf{x})\) = \{$M->ans_array\} \(\textbf {x}\)
 $BR
-Then find a formula for \(T^{−1}\), and use it to determine the amount of Vigoro, Parker’s, and Bleyer’s required to produce \($nitrogen\) pounds of nitrogen, \($phosphoricacid\) pounds of phosphoric acid and \($potash\) pounds of potash.
+Then find a formula for \(T^{−1}\), and use it to determine the amount of Vigoro, Parker's, and Bleyer's required to produce \($nitrogen\) pounds of nitrogen, \($phosphoricacid\) pounds of phosphoric acid and \($potash\) pounds of potash.
 $BR
 \(T^{-1}(\textbf{y})\) = \{$MI->ans_array\} \(\textbf {y}\)
 $BR

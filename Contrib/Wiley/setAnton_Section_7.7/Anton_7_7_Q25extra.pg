@@ -5,7 +5,7 @@
 ## KEYWORDS('derivative')
 ## DBsubject('Calculus')
 ## DBchapter('Principles of Integral Evaluation')
-## DBsection('Numerical Integration; Simpson’s Rule')
+## DBsection('Numerical Integration; Simpson's Rule')
 ## TitleText1('Calculus')
 ## EditionText1('9') 
 ## AuthorText1('Anton')
@@ -84,7 +84,7 @@ $ansCe=Compute("$ansCed");
 # Main text
 Context()->texStrings;
 BEGIN_TEXT
-Approximate the integral using Simpson’s rule \(S_{10}\) and compare your answer to that produced by a calculating utility with a numerical integration capability. $BR
+Approximate the integral using Simpson's rule \(S_{10}\) and compare your answer to that produced by a calculating utility with a numerical integration capability. $BR
 Express your final approximation answers to six decimal places use non-rounded values to calculate the error functions expressing each to six decimal places.$PAR
 
 \( \displaystyle  \int_{$a}^{$b} $f \;dx=\) \{ans_rule(20) \}(from CAS).$PAR
