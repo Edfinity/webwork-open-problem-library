@@ -23,7 +23,7 @@
 ## Section2('4.7')
 ## Problem2('')
 ## TitleText3('Calculus: Early Transcendentals')
-## AuthorText3('Stewart')
+## AuthorText3('James Stewart')
 ## EditionText3('5')
 ## Section3('4.4')
 ## Problem3('')
@@ -55,4 +55,3 @@ $ans = 1/$a;
 ANS(num_cmp($ans));
 
 ENDDOCUMENT();        # This should be the last executable line in the problem.
-

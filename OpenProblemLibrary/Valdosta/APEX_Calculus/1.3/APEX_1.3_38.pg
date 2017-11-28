@@ -28,7 +28,7 @@ loadMacros(
 ## Section2('2.6')
 ## Problem2('35')
 ## TitleText3('Calculus: Early Transcendentals')
-## AuthorText3('Stewart')
+## AuthorText3('James Stewart')
 ## EditionText3('5')
 ## Section3('3.4')
 ## Problem3('35')
@@ -45,8 +45,8 @@ TEXT(beginproblem());
 
 BEGIN_TEXT
 Evaluate the limit
-\[ 
-   \lim\limits_{h \to 0} \frac {\sin $n h} {$m h} = 
+\[
+   \lim\limits_{h \to 0} \frac {\sin $n h} {$m h} =
 \]
 Enter $BBOLD DNE $EBOLD if the limit does not exist.
 $PAR Limit = \{ans_rule(10) \}
@@ -54,12 +54,12 @@ $BR
 END_TEXT
 
 SOLUTION(EV3(<<'END_SOLUTION'));
-$BR$BBOLD Solution:$EBOLD 
+$BR$BBOLD Solution:$EBOLD
 $PAR
 Rewrite the limit so that the special limit, \( \displaystyle
 \lim_{x \to 0} \frac{\sin x}{x} = 1\), can be used.
 $BR$BR
-\[ 
+\[
   \lim_{h \to 0} \frac{\sin $n h}{$m h}
   = \lim_{h \to 0} \frac{\sin $n h}{$m h}\cdot \frac{$n}{$n}
   = \lim_{h \to 0} \frac{\sin $n h}{$n h}\cdot \frac{$n}{$m}
@@ -71,4 +71,4 @@ END_SOLUTION
 
 ANS(num_cmp($ans, strings=>["DNE"]));
 
-ENDDOCUMENT();    
+ENDDOCUMENT();
