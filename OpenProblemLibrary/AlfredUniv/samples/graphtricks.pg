@@ -1,7 +1,7 @@
 ## DESCRIPTION
 ## Problem from Functions Modeling Change, Connally, et al., 3rd ed.
 ## WeBWorK problem written by Adam Spiegler #<aspiegler@luc.edu>Library/LoyolaChicago/Precalc/Chap1Sec2/Q03.pg
-## 
+##
 ## ENDDESCRIPTION
 
 ## DBsubject(WeBWorK)
@@ -11,7 +11,7 @@
 ## Author(Darwyn Cook)
 ## Level(1)
 ## TitleText1('AUCI')
-## AuthorText1('Petrillo')
+## AuthorText1('Cook, Frey, Petrillo')
 ## EditionText1('1')
 ## Section1('1.1')
 ## Problem1('7')
@@ -26,7 +26,7 @@ loadMacros(
   "PGgraphmacros.pl",
   "PGcourse.pl"
 );
- 
+
 TEXT(beginproblem());
 $showPartialCorrectAnswers = 1;
 $refreshCachedImages=1;
@@ -74,7 +74,7 @@ $gr->lb( new Label($x[4],  -.25, $x[4],'black','center','middle'));
 $gr->lb( new Label($x[5],  -.25, $x[5],'black','center','middle'));
 $gr->lb( new Label($x[6],  -.25, $x[6],'black','center','middle'));
 
-$f1=new Fun($poly, $gr); 
+$f1=new Fun($poly, $gr);
 $f1->color('blue');
 $f1->domain(0,$x[6]+1);
 
@@ -84,7 +84,7 @@ $gr->lineTo($x[4],$ytop,'black',2);
 
 BEGIN_TEXT
 $BR
-\{ image( insertGraph($gr), 
+\{ image( insertGraph($gr),
 width=>350,height=>350,tex_size=>200 ) \}
 $BR
 If f(x) is the black function, and g(x) the blue function graphed above, then
@@ -98,5 +98,3 @@ ANS(Real("($ytop-$ymiddle)/($x[4]-$x[1])")->cmp() );
 ANS(Real("($ytop-$ymiddle)/($x[4]-$x[1])")->cmp() );
 COMMENT('Add a function from a perl subroutine to a graph. Clear all of the labels in a graph, create labels with dynamic values.');
 ENDDOCUMENT();
-
-

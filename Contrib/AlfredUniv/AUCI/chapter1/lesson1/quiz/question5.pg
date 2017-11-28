@@ -3,7 +3,7 @@
 # File Created: 5/15/2012
 # Last Modified: 5/15/2012
 # Problem Author: Darwyn Cook
-# WeBWorK Entry: 
+# WeBWorK Entry:
 # Location: Alfred University
 #
 ##ENDDESCRIPTION
@@ -19,7 +19,7 @@
 ## Institution('Alfred University')
 ## TitleText1('AUCI')
 ## EditionText1('1')
-## AuthorText1('Cook' 'Frey' 'Petrillo')
+## AuthorText1('Cook, Frey, Petrillo')
 ## Section1('1.1')
 ## Problem1('1')
 
@@ -32,7 +32,7 @@ loadMacros(
   "MathObjects.pl",
   "PGcourse.pl"
 );
- 
+
 ## Show partial correct answers
 $showPartialCorrectAnswers = 0;
 
@@ -57,7 +57,7 @@ $estimate = Compute("$t2*$rateofchange + $y0");
 
 Context()->texStrings;
 BEGIN_TEXT
-Let \( S(t) \) be the amount of sales in dollars by a small business during the  \( t \)-th week after January 1. Suppose sales on January 1 were \($y0\) dollars and sales \($t1\) weeks later were \($y1\) dollars.  Compute the following over the time interval \( [$t0,$t1] \).  Enter the units by typing the full words or phrases (e.g., feet per second).  
+Let \( S(t) \) be the amount of sales in dollars by a small business during the  \( t \)-th week after January 1. Suppose sales on January 1 were \($y0\) dollars and sales \($t1\) weeks later were \($y1\) dollars.  Compute the following over the time interval \( [$t0,$t1] \).  Enter the units by typing the full words or phrases (e.g., feet per second).
 $BR $BR
 (a) \( \triangle t = \) \{ans_rule\}  Units? \{ans_rule(20)\}
 $BR $BR
@@ -65,11 +65,11 @@ $BR $BR
 $BR $BR
 (c) \( \triangle S/\triangle t = \) \{ans_rule\}   Units? \{ans_rule(20)\}
 $BR $BR
-(d) Use the average rate of change in part (c) to estimate the sales during the \($t2\)th week after January 1.  That is, estimate \(S($t2)\). 
+(d) Use the average rate of change in part (c) to estimate the sales during the \($t2\)th week after January 1.  That is, estimate \(S($t2)\).
 $BR $BR
-$SPACE $SPACE \(S($t2) \approx \) \{ans_rule\}  Units? \{ans_rule(20)\} 
+$SPACE $SPACE \(S($t2) \approx \) \{ans_rule\}  Units? \{ans_rule(20)\}
 
- 
+
 END_TEXT
 Context()->normalStrings;
 
@@ -79,7 +79,7 @@ ANS($deltay->cmp() );
 ANS($dollars->cmp() );
 ANS($rateofchange->cmp() );
 ANS($dollarsperweek->cmp() );
-ANS($estimate->cmp() ); 
+ANS($estimate->cmp() );
 ANS($dollars->cmp() );
 
 

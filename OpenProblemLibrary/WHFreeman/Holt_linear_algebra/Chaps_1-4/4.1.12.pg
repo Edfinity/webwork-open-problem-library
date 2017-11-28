@@ -9,9 +9,10 @@
 ## Institution(Saint Louis University)
 ## Author(Mike May)
 ## Level(3)
-## TitleText1('Linear Algebra')
-## AuthorText1('Holt')
-## EditionText1('linear algebra','vector space','subspace')
+## TitleText1('Linear Algebra with Applications')
+## AuthorText1('Jeffrey Holt')
+## EditionText1('')
+## KEYWORDS('linear algebra','vector space','subspace')
 ## Section1('4.1')
 ## Problem1('12')
 
@@ -28,7 +29,7 @@ loadMacros(
 # make sure we're in the context we want
 Context("Numeric");
 
-# the arguments of PopUp are [list of answers], 
+# the arguments of PopUp are [list of answers],
 #    correct answer
   $popup = new_select_list();
   $popup->rf_print_q(~~&pop_up_list_print_q);
@@ -49,8 +50,8 @@ BEGIN_TEXT
 \{ textbook_ref_exact("Holt Linear Algebra", "4.1","12") \}
 
 $PAR
-Determine if the subset of \( {\mathbb R}^{3} \) consisting of vectors of the form 
-             \( \left[ \begin{array}{c} a \cr b \cr c \end{array} \right] \), where at most one of 
+Determine if the subset of \( {\mathbb R}^{3} \) consisting of vectors of the form
+             \( \left[ \begin{array}{c} a \cr b \cr c \end{array} \right] \), where at most one of
              \(a\), \(b\), and \(c\) is nonzero, is a subspace.
 $PAR
 Select true or false for each statement.
@@ -68,7 +69,7 @@ SOLUTION(EV3(<<'END_SOLUTION'));
 $PAR SOLUTION $PAR
 The vectors \( \left[ \begin{array}{c} 1 \cr 0 \cr 0  \end{array} \right] \) and
 \( \left[ \begin{array}{c} 0 \cr 0 \cr 1  \end{array} \right] \)
-are included in the set, but the vector 
+are included in the set, but the vector
 \( \left[ \begin{array}{c} 1 \cr 0 \cr 0  \end{array} \right] +
  \left[ \begin{array}{c} 0 \cr 0 \cr 1  \end{array} \right] =
  \left[ \begin{array}{c} 1 \cr 0 \cr 1  \end{array} \right] \)

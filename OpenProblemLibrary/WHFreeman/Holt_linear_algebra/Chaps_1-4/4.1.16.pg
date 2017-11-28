@@ -9,9 +9,9 @@
 ## Institution(Saint Louis University)
 ## Author(Mike May)
 ## Level(3)
-## TitleText1('Linear Algebra')
-## AuthorText1('Holt')
-## EditionText1('linear algebra','vector space','subspace')
+## TitleText1('Linear Algebra with Applications')
+## AuthorText1('Jeffrey Holt')
+## EditionText1('')
 ## Section1('4.1')
 ## Problem1('16')
 ## KEYWORDS('subspaces')
@@ -29,7 +29,7 @@ loadMacros(
 # make sure we're in the context we want
 Context("Numeric");
 
-# the arguments of PopUp are [list of answers], 
+# the arguments of PopUp are [list of answers],
 #    correct answer
   $popup = new_select_list();
   $popup->rf_print_q(~~&pop_up_list_print_q);
@@ -47,12 +47,12 @@ TEXT(beginproblem());
 $showPartialCorrectAnswers = 0;
 Context()->texStrings;
 BEGIN_TEXT
-\{ textbook_ref_exact("Holt Linear Algebra", "4.1","16") \} 
+\{ textbook_ref_exact("Holt Linear Algebra", "4.1","16") \}
 $PAR
-Determine if the subset of \( {\mathbb R}^{2} \) consisting of vectors of the form 
-             \( \left[ \begin{array}{c} v_1 \cr \vdots \cr v_n  \end{array} \right] \), 
+Determine if the subset of \( {\mathbb R}^{2} \) consisting of vectors of the form
+             \( \left[ \begin{array}{c} v_1 \cr \vdots \cr v_n  \end{array} \right] \),
 
-where 
+where
              \(v_1-v_2+v_3-v_4+v_5-\cdots -v_n = 0\) is a subspace.
 
 $PAR

@@ -9,8 +9,8 @@
 ## Institution(Saint Louis University)
 ## Author(Mike May)
 ## Level(3)
-## TitleText1('Linear Algebra')
-## AuthorText1('Holt')
+## TitleText1('Linear Algebra with Applications')
+## AuthorText1('Jeffrey Holt')
 ## EditionText1('')
 ## Section1('4.1')
 ## Problem1('1')
@@ -29,7 +29,7 @@ loadMacros(
 # make sure we're in the context we want
 Context("Numeric");
 
-# the arguments of PopUp are [list of answers], 
+# the arguments of PopUp are [list of answers],
 #    correct answer
   $popup = new_select_list();
   $popup->rf_print_q(~~&pop_up_list_print_q);
@@ -50,8 +50,8 @@ BEGIN_TEXT
 \{ textbook_ref_exact("Holt Linear Algebra", "4.1","11") \}
 
 $PAR
-Determine if the subset of \( {\mathbb R}^{3} \) consisting of vectors of the form 
-             \( \left[ \begin{array}{c} a \cr b \cr c \end{array} \right] \), where 
+Determine if the subset of \( {\mathbb R}^{3} \) consisting of vectors of the form
+             \( \left[ \begin{array}{c} a \cr b \cr c \end{array} \right] \), where
              \(a\ge 0\), \(b\ge 0\), and \(c\ge 0\) is a subspace.
 $PAR
 Select true or false for each statement.
@@ -67,7 +67,7 @@ ANS(str_cmp( $popup->ra_correct_ans() )) ;
 Context()->texStrings;
 SOLUTION(EV3(<<'END_SOLUTION'));
 $PAR SOLUTION $PAR
-The vector \( \left[ \begin{array}{c} 1 \cr 0 \cr 0  \end{array} \right] \) is included in the set, but the vector 
+The vector \( \left[ \begin{array}{c} 1 \cr 0 \cr 0  \end{array} \right] \) is included in the set, but the vector
 \( (-1)*\left[ \begin{array}{c} 1 \cr 0 \cr 0  \end{array} \right] =
  \left[ \begin{array}{c} -1 \cr 0 \cr 0  \end{array} \right] \)
  is not included in the set.

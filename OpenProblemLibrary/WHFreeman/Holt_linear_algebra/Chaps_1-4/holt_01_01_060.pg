@@ -11,8 +11,8 @@
 ## Level(2)
 ## Static(1)
 ## MO(1)
-## TitleText1('Linear Algebra')
-## AuthorText1('Holt')
+## TitleText1('Linear Algebra with Applications')
+## AuthorText1('Jeffrey Holt')
 ## EditionText1('1e')
 ## Section1('1.1')
 ## Problem1('60')
@@ -20,7 +20,7 @@
 
 
 ###########################################################################
-# initialization 
+# initialization
 ###########################################################################
 DOCUMENT();
 loadMacros(
@@ -34,13 +34,13 @@ $showPartialCorrectAnswers = 1;
 
 
 ###########################################################################
-# setup contexts and variables 
+# setup contexts and variables
 ###########################################################################
 Context()->strings->add("true"=>{}, "false"=>{});
 
 
 ###########################################################################
-# state the problem 
+# state the problem
 ###########################################################################
 Context()->texStrings;
 BEGIN_TEXT
@@ -55,7 +55,7 @@ Context()->normalStrings;
 
 
 ###########################################################################
-# check the answer  
+# check the answer
 ###########################################################################
 ANS(String("true")->cmp());
 
