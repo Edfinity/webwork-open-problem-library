@@ -43,7 +43,7 @@ $f = Formula("{2x**2+$b2 x -$ab} / {x-$a}")->reduce;
 ###################################
 # Main text
 
-includePGfile("removable-discontinuity-text.pg");
+includePGfile("Library/Union/setLimitContinuity/removable-discontinuity-text.pg");
 
 Context()->texStrings;
 BEGIN_TEXT

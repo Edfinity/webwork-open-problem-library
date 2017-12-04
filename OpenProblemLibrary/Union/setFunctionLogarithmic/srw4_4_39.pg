@@ -38,7 +38,7 @@ $eqn=("\log_{10}(3x+$a)=$b ");
 ###################################
 # Main text
 
-includePGfile("solve-equation-text.pg");
+includePGfile("Library/Union/setFunctionLogarithmic/solve-equation-text.pg");
 BEGIN_TEXT
 \[ $eqn\]
 \( x = \) \{ans_rule(20) \}

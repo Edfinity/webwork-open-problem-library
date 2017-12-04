@@ -48,7 +48,7 @@ Context("Numeric");
 ###################################
 # Main text
 
-includePGfile("removable-discontinuity-text.pg");
+includePGfile("Library/Union/setLimitContinuity/removable-discontinuity-text.pg");
 
 Context()->texStrings;
 BEGIN_TEXT

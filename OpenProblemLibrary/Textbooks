@@ -329,7 +329,7 @@ AuthorText('Wackerly, Mendenhall, Scheaffer')
 
 TitleText('Calculus')
 EditionText('5')
-AuthorText('Stewart')
+AuthorText('James Stewart')
 
 1 >>> Functions and Models
 1.1 >>> Four Ways to Represent a Function
@@ -583,7 +583,7 @@ AuthorText('Stewart, Redlin, Watson')
 
 TitleText('Statistics for Management and Economics')
 EditionText('7')
-AuthorText('Keller')
+AuthorText('Keller, Warrack')
 
 1 >>> What is Statistics?
 1.1 >>> Key Statistical Concepts
@@ -1130,7 +1130,7 @@ AuthorText('Saff, Snider')
 
 TitleText('Calculus: Early Transcendentals')
 EditionText('5')
-AuthorText('Stewart')
+AuthorText('James Stewart')
 
 1 >>> Functions and Models
 1.1 >>> Four Ways to Represent a Function

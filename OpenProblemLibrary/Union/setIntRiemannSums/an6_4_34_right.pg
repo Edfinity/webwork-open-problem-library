@@ -42,7 +42,7 @@ TEXT(beginproblem());
 
 # The following file defines the function to be used
 
-includePGfile("an6_4_34-define-function-text.pg");
+includePGfile("Library/Union/setIntRiemannSums/an6_4_34-define-function-text.pg");
 
 # $offset (if present) is a number between 0 and 1 that
 #      indicates where within each interval, the point should
@@ -57,7 +57,7 @@ $offset = 1;       #use right endpoints
 #The following file generates the problem text for each
 #Riemann sum estimate.
 
-includePGfile("riemann-sum-estimate-text.pg");
+includePGfile("Library/Union/setIntRiemannSums/riemann-sum-estimate-text.pg");
 
 ###################################
 # Answers

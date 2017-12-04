@@ -78,7 +78,7 @@ $graph->lb($label_f,$label_fp,$label_fpp);
 ###################################
 # Main text
 
-includePGfile("derivative-text.pg");
+includePGFile("Library/Union/setDervGraphs/derivative-text.pg");
 
 ###################################
 # Answers

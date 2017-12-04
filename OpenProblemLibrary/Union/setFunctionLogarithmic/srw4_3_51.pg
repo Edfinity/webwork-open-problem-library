@@ -37,7 +37,7 @@ $eqn=(" e ^ { $a1 x } = $b1  ");
 ###################################
 # Main text
 
-includePGfile("solve-equation-text.pg");
+includePGfile("Library/Union/setFunctionLogarithmic/solve-equation-text.pg");
 BEGIN_TEXT
 \[ $eqn\]
 \( x = \) \{ans_rule(20) \}

@@ -48,7 +48,7 @@ Context("Numeric");
 ###################################
 # Main text
 
-# includePGfile("jump-discontinuity-text.pg"); # This seems to break the problem on hobbes. Nandor
+# includePGfile("Library/Union/setLimitContinuity/jump-discontinuity-text.pg"); # This seems to break the problem on hobbes. Nandor
 
 Context()->texStrings;
 BEGIN_TEXT

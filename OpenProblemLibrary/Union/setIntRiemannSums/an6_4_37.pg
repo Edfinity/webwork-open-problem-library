@@ -68,7 +68,7 @@ $ans4 = "$c($prod + (n(n+1)/2)*($w/n)^2)";
 # This file defines the stuff that all stays the same
 # and includes the problem text
 
-includePGfile("integrals-by-defn-text.pg");
+includePGfile("Library/Union/setIntRiemannSums/integrals-by-defn-text.pg");
 
 ###################################
 # Answers

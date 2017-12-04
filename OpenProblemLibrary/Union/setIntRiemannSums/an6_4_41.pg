@@ -65,7 +65,7 @@ $ans4 = "$c($b/n)^3*(n(n+1)/2)^2*($b/n)";
 # This file defines the stuff that all stays the same
 # and includes the problem text
 
-includePGfile("integrals-by-defn-text.pg");
+includePGfile("Library/Union/setIntRiemannSums/integrals-by-defn-text.pg");
 
 ###################################
 # Answers
