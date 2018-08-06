@@ -1,7 +1,7 @@
 # WeBWorK problem written by Carl Yao
 # Portland Community College
 #
-# 
+#
 # Multiply a whole number by a negative fraction. Denominator goes into the integer.
 #
 # Last edited: Jordan 6/20/13
@@ -33,7 +33,8 @@ loadMacros(
   "MathObjects.pl",
   "PGML.pl",
   "contextFraction.pl",
-  "PGcourse.pl"
+  "PCCmacros.pl",
+  "PGcourse.pl",
 );
 
 ##############################################
@@ -62,9 +63,9 @@ BEGIN_PGML
 
 Multiply the integer with the fraction: [``[$integer]\cdot\left( -{\frac{[$num]}{[$den]}} \right)``]
 
-If needed, use an improper fraction in your answer. Don't use a mixed number. 
+[@KeyboardInstructions("If needed, use an improper fraction in your answer. Don't use a mixed number.")@]**
 
-    [_________] 
+    [_________]
 
 END_PGML
 
@@ -74,12 +75,12 @@ ANS($ans->cmp()->withPostFilter(
   sub {
     my $ansHash = shift;
     if ($ansHash->{score}) {
-        my $sfrac = $ansHash->{student_value};  
+        my $sfrac = $ansHash->{student_value};
         if ($sfrac->class eq 'Fraction') {
            my ($num, $sden) = $sfrac->value;
            if ($sden == 1) {
-             $ansHash->{score} = 0;                  
-             $ansHash->{ans_message} = "Your answer can be simplified further";   
+             $ansHash->{score} = 0;
+             $ansHash->{ans_message} = "Your answer can be simplified further";
            };
         };
     };
@@ -108,5 +109,3 @@ Next, do the fraction multiplication. If you reduce numbers before multiplying a
 END_PGML_SOLUTION
 
 ENDDOCUMENT();
-
-

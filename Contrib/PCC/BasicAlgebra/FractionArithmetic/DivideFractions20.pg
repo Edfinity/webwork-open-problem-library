@@ -32,7 +32,8 @@ loadMacros(
   "MathObjects.pl",
   "PGML.pl",
   "contextFraction.pl",
-  "PGcourse.pl"
+  "PCCmacros.pl",
+  "PGcourse.pl",
 );
 
 ##############################################
@@ -68,11 +69,11 @@ TEXT(beginproblem());
 
 BEGIN_PGML
 
-Divide one fraction into the other: [`` \frac{[$num1]}{[$den1]} \div \left(-\frac{[$den2]}{[$num2]}\right) ``]
+Carry out the division: [`` \frac{[$num1]}{[$den1]} \div \left(-\frac{[$den2]}{[$num2]}\right) ``]
 
-If needed, use an improper fraction in your answer. Don't use a mixed number.
+[@KeyboardInstructions("If needed, use an improper fraction in your answer. Don't use a mixed number.")@]**
 
-    [_________]{$ans} 
+    [_________]{$ans}
 
 END_PGML
 
@@ -80,7 +81,7 @@ END_PGML
 
 BEGIN_PGML_SOLUTION
 
-When we do division with fractions, as with 
+When we do division with fractions, as with
 
     [``\frac{[$num1]}{[$den1]} \div \left(-\frac{[$den2]}{[$num2]}\right) ``]
 
@@ -104,6 +105,3 @@ Then we do fraction multiplication as usual. The full process is:
 END_PGML_SOLUTION
 
 ENDDOCUMENT();
-
-
-

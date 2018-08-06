@@ -1,7 +1,7 @@
 # WeBWorK problem written by Carl Yao
 # Portland Community College
 #
-# 
+#
 # Multiply a whole number with fractions. The integer cannot be reduced with the denominator.
 #
 # Last edited: Carl Yao 8/30/13, Jordan 6/18/13
@@ -33,7 +33,8 @@ loadMacros(
   "MathObjects.pl",
   "PGML.pl",
   "contextFraction.pl",
-  "PGcourse.pl"
+  "PCCmacros.pl",
+  "PGcourse.pl",
 );
 
 ##############################################
@@ -63,7 +64,7 @@ BEGIN_PGML
 
 Multiply the integer with the fraction: [``[$integer]\cdot \frac{[$num]}{[$den]} ``]
 
-If needed, use an improper fraction in your answer. Don't use a mixed number. 
+[@KeyboardInstructions("If needed, use an improper fraction in your answer. Don't use a mixed number.")@]**
 
     [___________]{$ans}
 
@@ -81,7 +82,7 @@ Next, simply multiply both numerators and both denominators:
 
     [``
 \begin{aligned}[t]
-   [$integer]\cdot \frac{[$num]}{[$den]} 
+   [$integer]\cdot \frac{[$num]}{[$den]}
        &= \frac{[$integer]}{1} \cdot \frac{[$num]}{[$den]} \\
        &= \frac{[$integer]\cdot[$num]}{1 \cdot [$den]} \\
        &= \frac{[$numAns]}{[$denAns]}
@@ -93,6 +94,3 @@ The answer to this question is [``\frac{[$numAns]}{[$denAns]}``].
 END_PGML_SOLUTION
 
 ENDDOCUMENT();
-
-
-
