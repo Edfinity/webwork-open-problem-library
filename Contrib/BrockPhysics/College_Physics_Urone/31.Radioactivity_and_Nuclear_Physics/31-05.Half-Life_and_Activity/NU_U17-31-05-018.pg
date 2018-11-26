@@ -10,7 +10,7 @@
 ## Author(Caroline Promnitz)
 ## Edited(Connor Wilson, June 25, 2018)
 ## TitleText1('College Physics')
-## AuthorText1('Urone et. al')
+## AuthorText1('Urone et al')
 ## EditionText1('2017')
 ## Section1('31.5')
 ## Problem1('61')
@@ -45,7 +45,7 @@ $R238 = 0.992745*$R238a;
 $R = $R235+$R238;
 
 Context() -> texStrings;
-BEGIN_TEXT 
+BEGIN_TEXT
 
 $PAR
 $PAR
@@ -62,7 +62,7 @@ to see a table of the elements and their atomic masses, half-lives, and percent 
 $PAR
 $PAR
 
-Armour-piercing shells with depleted uranium cores are fired by aircraft at tanks. (The high density of the uranium makes them effective.) The uranium is called depleted because it has had its \(\,^{235}\textrm{U}\) removed for reactor use and is nearly pure \(\,^{238}\textrm{U}\). Depleted uranium has been erroneously called non-radioactive. To demonstrate that this is wrong: 
+Armour-piercing shells with depleted uranium cores are fired by aircraft at tanks. (The high density of the uranium makes them effective.) The uranium is called depleted because it has had its \(\,^{235}\textrm{U}\) removed for reactor use and is nearly pure \(\,^{238}\textrm{U}\). Depleted uranium has been erroneously called non-radioactive. To demonstrate that this is wrong:
 
 $PAR
 $PAR
@@ -89,7 +89,7 @@ BEGIN_TEXT
 $PAR
 $PAR
 
-b) Calculate the activity of \($massU \, \textrm{g}\) of natural uranium, neglecting the \(\,^{234}\textrm{U}\) and all daughter nuclides. 
+b) Calculate the activity of \($massU \, \textrm{g}\) of natural uranium, neglecting the \(\,^{234}\textrm{U}\) and all daughter nuclides.
 
 $PAR
 $PAR
