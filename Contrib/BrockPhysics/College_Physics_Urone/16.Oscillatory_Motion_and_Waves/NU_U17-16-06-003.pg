@@ -13,7 +13,7 @@
 ## AuthorText1('Urone et. al')
 ## EditionText1('2017')
 ## Section1('16.6')
-## Problem1(3'')
+## Problem1('3')
 ## KEYWORDS(frequency, period, harmonic, Hooke's, energy, kinetic, spring)
 
 DOCUMENT();
@@ -25,7 +25,7 @@ loadMacros( "PGbasicmacros.pl",
                 "PG_CAPAmacros.pl",
                 "BrockPhysicsMacros.pl",
                 "answerHints.pl"
-    
+
 );
 
 TEXT(beginproblem());
@@ -50,7 +50,7 @@ At which positions is the speed of a simple harmonic oscillator half its maximum
 
 $PAR
 
-\(x/X = \pm\) \{ans_rule(30)\} 
+\(x/X = \pm\) \{ans_rule(30)\}
 
 $PAR
 

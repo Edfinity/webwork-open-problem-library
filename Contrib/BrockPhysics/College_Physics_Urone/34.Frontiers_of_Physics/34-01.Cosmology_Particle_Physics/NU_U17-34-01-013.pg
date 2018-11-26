@@ -12,7 +12,7 @@
 ## AuthorText1('Urone et. al')
 ## EditionText1('2017')
 ## Section1('34.1')
-## Problem1('13’)
+## Problem1('13')
 ## KEYWORDS()
 
 DOCUMENT();
@@ -36,9 +36,9 @@ $atoms = $mass/(1.67*10**-27);
 
 BEGIN_TEXT
 The average particle energy needed to observe unification of forces is estimated to be
-\(10^{19}\) GeV. 
+\(10^{19}\) GeV.
 $BR
-a) What is the rest mass in kilograms of a particle that has a rest mass of \(10^{19}\) \(\textrm{GeV/c}^2\)? 
+a) What is the rest mass in kilograms of a particle that has a rest mass of \(10^{19}\) \(\textrm{GeV/c}^2\)?
 
 $BR
 $BR
@@ -57,7 +57,7 @@ b) How many times the mass of a hydrogen atom is this?
 $BR
 $BR
 
-\{ans_rule(40)\} 
+\{ans_rule(40)\}
 
 $BR
 $BR
