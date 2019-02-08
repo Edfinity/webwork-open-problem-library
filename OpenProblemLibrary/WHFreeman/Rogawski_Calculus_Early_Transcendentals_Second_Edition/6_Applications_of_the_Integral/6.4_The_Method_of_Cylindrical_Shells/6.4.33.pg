@@ -9,7 +9,8 @@
 ## Section1('6.4')
 ## Problem1('33')
 ## KEYWORDS('calculus', 'integration', 'integrals', 'volumes of revolution', 'revolution', 'shell method', 'disk method')
-## Institution('W.H.Freeman')DOCUMENT();
+## Institution('W.H.Freeman')
+
 DOCUMENT();
 # Load whatever macros you need for the problem
 loadMacros(
@@ -58,7 +59,7 @@ $PAR
 Use the Shell Method to find the volume of the solid
 obtained by rotating region above the graph of \(f (x) = x^2+2\) and below y = $yn for \(0 \le x \le $n\)  about the \(y\)-axis. $BR
 $PAR
-\{ image(insertGraph($graph), width=>$xsize, height=>$ysize) \} $BR 
+\{ image(insertGraph($graph), width=>$xsize, height=>$ysize) \} $BR
 
 \(V=\)\{ans_rule()\}
 END_TEXT
