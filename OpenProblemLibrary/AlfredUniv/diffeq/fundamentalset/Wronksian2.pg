@@ -3,7 +3,7 @@
 # File Created: 3/27/2009
 # Last Modified: 3/27/2009
 # Problem Author: Juan Marin
-# WeBWorK Entry: 
+# WeBWorK Entry:
 # Location: Alfred University
 #
 ##ENDDESCRIPTION
@@ -18,7 +18,7 @@
 ## Author(Juan Marin)
 ## Level(2)
 ## TitleText1('Differential Equations with Boundary-Value Problems')
-## AuthorText1('Zill, Cullen')
+## AuthorText1('Zill and Cullen')
 ## EditionText1('7')
 ## Section1('4.7')
 ## Problem1('')
@@ -37,7 +37,7 @@ loadMacros(
   "parserImplicitEquation.pl",
   "PGcourse.pl"
 );
- 
+
 #install_problem_grader(~~&full_partial_grader);
 
 # No partial credit on this problem, so we say:
@@ -72,19 +72,19 @@ $w = Compute("$y1 * $dy2 - $y2 * $dy1")->reduce;
 # Make a new select list
 $tf = new_pop_up_select_list();
 $tf->ra_pop_up_list(["Yes" => "Yes","No" => "No"]);
-# $tf now "contains" the select list object.  
+# $tf now "contains" the select list object.
 # See matchinglistexample.pg for details
 
 
 $tf -> qa (
-q!Is \(\{y_1,y_2\}\) a fundamental set for 
+q!Is \(\{y_1,y_2\}\) a fundamental set for
 \($b x^5\sin($a x)D^2 y -$a x^2\cos($b x) Dy =0\)
 on \((0,\pi/$c)\)?!,  # each entry has to end with a comma
 "No",
 );   # remember every statement has to end with a semi-colon.
 
 # Choose two of the question and answer pairs at random.
-$tf ->choose(1);  # Using choose(3) would choose all three questions, but the order of the questions and answers would be 
+$tf ->choose(1);  # Using choose(3) would choose all three questions, but the order of the questions and answers would be
                   # scrambled.
 
 
@@ -98,19 +98,19 @@ $tf ->choose(1);  # Using choose(3) would choose all three questions, but the or
 Context()->texStrings;
 BEGIN_TEXT
 $PAR
-It can be shown that \(y_1=$a\)  and \(y_2=\cos^2($b x)+\sin^2($b x)\)  are 
-solutions to the differential equation 
+It can be shown that \(y_1=$a\)  and \(y_2=\cos^2($b x)+\sin^2($b x)\)  are
+solutions to the differential equation
 \($b x^5\sin($a x)D^2 y -$a x^2\cos($b x) Dy =0\)
 on \((0,\pi/$c)\).
 
-$PAR 
-What does the  Wronskian of \(y_1, y_2\) equal on \((0,\pi/$c)\)? 
+$PAR
+What does the  Wronskian of \(y_1, y_2\) equal on \((0,\pi/$c)\)?
 $PAR
 \(W(y_1,y_2)\) =  \{ ans_rule()\} on \((0,\pi/$c)\).
 
 $BR
 \{ $tf-> print_q \}
- 
+
 END_TEXT
 
 

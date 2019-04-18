@@ -3,7 +3,7 @@
 # File Created: 3/27/2009
 # Last Modified: 3/27/2009
 # Problem Author: Juan Marin
-# WeBWorK Entry: 
+# WeBWorK Entry:
 # Location: Alfred University
 #
 ##ENDDESCRIPTION
@@ -18,7 +18,7 @@
 ## Author(Juan Marin)
 ## Level(5)
 ## TitleText1('Differential Equations with Boundary-Value Problems')
-## AuthorText1('Zill, Cullen')
+## AuthorText1('Zill and Cullen')
 ## EditionText1('7')
 ## Section1('4.7')
 ## Problem1('')
@@ -32,7 +32,7 @@ loadMacros(
   "MathObjects.pl",
   "PGcourse.pl"
 );
- 
+
 ## Show partial correct answers
 $showPartialCorrectAnswers = 1;
 ## Display the problem information
@@ -119,34 +119,34 @@ Let \(g(x)=$func\).
 $PAR
 Let \(S(x)\) be the Fourier Sine series of \(g\).
 $PAR
-\(S(x)= \displaystyle\sum_{n=1}^{\infty}\Bigg[\Big(\) 
+\(S(x)= \displaystyle\sum_{n=1}^{\infty}\Bigg[\Big(\)
   \{ ans_rule(55) \}
  \(\displaystyle\Big)\sin\Big(\frac{n \pi}{$L}x\Big)\Bigg]\)
-$PAR 
+$PAR
 
 What does \( S(-$L)\) equal?\(\ \ \ \  S(-$L)=\)\{ ans_rule(5) \}
 $PAR
 
-What does \( S(-$L3d4)\) equal?\(\ \ \ \  S(-$L3d4)=\)\{ ans_rule(5) \} 
-$PAR 
+What does \( S(-$L3d4)\) equal?\(\ \ \ \  S(-$L3d4)=\)\{ ans_rule(5) \}
+$PAR
 
 What does \( S(-$Ld2)\) equal?\(\ \ \ \  S(-$Ld2)=\)\{ ans_rule(5) \}
-$PAR 
+$PAR
 
 What does \( S(-$Ld4)\) equal?\(\ \ \ \  S(-$Ld4)=\)\{ ans_rule(5) \}
 $PAR
 
 What does \( S(0)\) equal?\(\ \ \ \  S(0)=\)\{ ans_rule(5) \}
-$PAR 
+$PAR
 
 What does \( S($Ld4)\) equal?\(\ \ \ \  S($Ld4)=\)\{ ans_rule(5) \}
-$PAR 
+$PAR
 
 What does \( S($Ld2)\) equal?\(\ \ \ \  S($Ld2)=\)\{ ans_rule(5) \}
-$PAR 
+$PAR
 
 What does \( S($L3d4)\) equal?\(\ \ \ \  S($L3d4)=\)\{ ans_rule(5) \}
-$PAR 
+$PAR
 
 What does \( S($L)\) equal?\(\ \ \ \  S($L)=\)\{ ans_rule(5) \}
 
@@ -156,31 +156,31 @@ $PAR
 \(C(x)= \) \{ ans_rule(5) \} \(+ \displaystyle\sum_{n=1}^{\infty}\Bigg[
 \Big(\) \{ ans_rule(60) \}\(\displaystyle\Big)\cos\Big(\frac{n \pi}{$L}x\Big)
 \Bigg]\)
-$PAR 
+$PAR
 
 What does \( C(-$L)\) equal?\(\ \ \ \  C(-$L)=\)\{ ans_rule(5) \}
 $PAR
 
-What does \( C(-$L3d4)\) equal?\(\ \ \ \  C(-$L3d4)=\)\{ ans_rule(5) \} 
-$PAR 
+What does \( C(-$L3d4)\) equal?\(\ \ \ \  C(-$L3d4)=\)\{ ans_rule(5) \}
+$PAR
 
 What does \( C(-$Ld2)\) equal?\(\ \ \ \  C(-$Ld2)=\)\{ ans_rule(5) \}
-$PAR 
+$PAR
 
 What does \( C(-$Ld4)\) equal?\(\ \ \ \  C(-$Ld4)=\)\{ ans_rule(5) \}
 $PAR
 
 What does \( C(0)\) equal?\(\ \ \ \  C(0)=\)\{ ans_rule(5) \}
-$PAR 
+$PAR
 
 What does \( C($Ld4)\) equal?\(\ \ \ \  C($Ld4)=\)\{ ans_rule(5) \}
-$PAR 
+$PAR
 
 What does \( C($Ld2)\) equal?\(\ \ \ \  C($Ld2)=\)\{ ans_rule(5) \}
-$PAR 
+$PAR
 
 What does \( C($L3d4)\) equal?\(\ \ \ \  C($L3d4)=\)\{ ans_rule(5) \}
-$PAR 
+$PAR
 
 What does \( C($L)\) equal?\(\ \ \ \  C($L)=\)\{ ans_rule(5) \}
 $PAR
@@ -192,31 +192,31 @@ $PAR
 +
 \Big(\)\{ ans_rule(25) \}\(\displaystyle\Big)\sin\Big(\frac{2 n \pi}{$L}x\Big)
 \Bigg]\)
-$PAR 
+$PAR
 
 What does \( f(-$L)\) equal?\(\ \ \ \  f(-$L)=\)\{ ans_rule(5) \}
 $PAR
 
-What does \( f(-$L3d4)\) equal?\(\ \ \ \  f(-$L3d4)=\)\{ ans_rule(5) \} 
-$PAR 
+What does \( f(-$L3d4)\) equal?\(\ \ \ \  f(-$L3d4)=\)\{ ans_rule(5) \}
+$PAR
 
 What does \( f(-$Ld2)\) equal?\(\ \ \ \  f(-$Ld2)=\)\{ ans_rule(5) \}
-$PAR 
+$PAR
 
 What does \( f(-$Ld4)\) equal?\(\ \ \ \  f(-$Ld4)=\)\{ ans_rule(5) \}
 $PAR
 
 What does \( f(0)\) equal?\(\ \ \ \  f(0)=\)\{ ans_rule(5) \}
-$PAR 
+$PAR
 
 What does \( f($Ld4)\) equal?\(\ \ \ \  f($Ld4)=\)\{ ans_rule(5) \}
-$PAR 
+$PAR
 
 What does \( f($Ld2)\) equal?\(\ \ \ \  f($Ld2)=\)\{ ans_rule(5) \}
-$PAR 
+$PAR
 
 What does \( f($L3d4)\) equal?\(\ \ \ \  f($L3d4)=\)\{ ans_rule(5) \}
-$PAR 
+$PAR
 
 What does \( f($L)\) equal?\(\ \ \ \  f($L)=\)\{ ans_rule(5) \}
 

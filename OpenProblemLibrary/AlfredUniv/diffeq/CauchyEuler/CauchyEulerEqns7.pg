@@ -3,7 +3,7 @@
 # File Created: 3/27/2009
 # Last Modified: 3/27/2009
 # Problem Author: Juan Marin
-# WeBWorK Entry: 
+# WeBWorK Entry:
 # Location: Alfred University
 #
 ##ENDDESCRIPTION
@@ -19,7 +19,7 @@
 ## MLT(IVP)
 ## Level(3)
 ## TitleText1('Differential Equations with Boundary-Value Problems')
-## AuthorText1('Zill, Cullen')
+## AuthorText1('Zill and Cullen')
 ## EditionText1('7')
 ## Section1('4.7')
 ## Problem1('')
@@ -37,7 +37,7 @@ loadMacros(
   "parserImplicitEquation.pl",
   "PGcourse.pl"
 );
- 
+
 ## Show partial correct answers
 $showPartialCorrectAnswers = 1;
 ## Display the problem information
@@ -115,17 +115,17 @@ $yp = Formula("$C1 x^($p)+$C2 x^($p)ln(x)")->reduce;
 Context()->texStrings;
 BEGIN_TEXT
 $BBOLD (1) $EBOLD
- Let \(C_1\) and \(C_2\) be arbitrary constants.  The general solution to 
-the homogeneous differential equation  
+ Let \(C_1\) and \(C_2\) be arbitrary constants.  The general solution to
+the homogeneous differential equation
 \( $A x^2 y''+ $B x y' + $C y = 0\) is the function
 \(y(x)=C_1\ y_1(x)+C_2\ y_2(x)=C_1\) \{$multipart->ans_rule(15)\} \(+C_2\)\{$multipart->ans_rule(15)\}.
 $PAR
 $BBOLD (2) $EBOLD
-The unique solution to 
-the initial value problem   
-\[ $A x^2 y''+$B x y' + $C y =0,\ \ y(1) = $y1,\ \ y'(1) = $Dy1.\] 
+The unique solution to
+the initial value problem
+\[ $A x^2 y''+$B x y' + $C y =0,\ \ y(1) = $y1,\ \ y'(1) = $Dy1.\]
 is the function
-\(y(x)=\)\{ans_rule(35)\} 
+\(y(x)=\)\{ans_rule(35)\}
 for \( x \in\) \{ ans_rule(15) \}.
 $BR
 $BBOLD

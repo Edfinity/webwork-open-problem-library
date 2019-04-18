@@ -3,7 +3,7 @@
 # File Created: 3/27/2009
 # Last Modified: 3/27/2009
 # Problem Author: Juan Marin
-# WeBWorK Entry: 
+# WeBWorK Entry:
 # Location: Alfred University
 #
 ##ENDDESCRIPTION
@@ -18,7 +18,7 @@
 ## Author(Juan Marin)
 ## Level(3)
 ## TitleText1('Differential Equations with Boundary-Value Problems')
-## AuthorText1('Zill, Cullen')
+## AuthorText1('Zill and Cullen')
 ## EditionText1('7')
 ## Section1('4.7')
 ## Problem1('')
@@ -37,7 +37,7 @@ loadMacros(
   "parserImplicitEquation.pl",
   "PGcourse.pl"
 );
- 
+
 $u = random(2,5,1);
 $v = random(6,9,1);
 
@@ -62,10 +62,10 @@ $int = Compute("(0,inf)");
 Context()->texStrings;
 BEGIN_TEXT
 $PAR
-It can be shown that \(y_1=$f,\ y_2=$g\) and \(y_3=$h\) are 
-solutions to the differential equation 
+It can be shown that \(y_1=$f,\ y_2=$g\) and \(y_3=$h\) are
+solutions to the differential equation
 \(x^2D^3y+$b x D^2y+ $c Dy =0\).
-$PAR 
+$PAR
 \(W(y_1, y_2, y_3 )\) =  \{$w->ans_rule\}.
 $BR
 For an IVP with initial conditions at \(x = $x0\), \(c_1y_1+c_2y_2+c_3y_3\) is the general solution for x on what interval? \{$int->ans_rule\}

@@ -3,7 +3,7 @@
 # File Created: 3/27/2009
 # Last Modified: 3/27/2009
 # Problem Author: Juan Marin
-# WeBWorK Entry: 
+# WeBWorK Entry:
 # Location: Alfred University
 #
 ##ENDDESCRIPTION
@@ -18,7 +18,7 @@
 ## Author(Juan Marin)
 ## Level(5)
 ## TitleText1('Differential Equations with Boundary-Value Problems')
-## AuthorText1('Zill, Cullen')
+## AuthorText1('Zill and Cullen')
 ## EditionText1('7')
 ## Section1('4.7')
 ## Problem1('')
@@ -35,7 +35,7 @@ loadMacros(
   "unionTables.pl",
   "PGcourse.pl"
 );
- 
+
 ## Show partial correct answers
 $showPartialCorrectAnswers = 1;
 ## Display the problem information
@@ -56,20 +56,20 @@ $B = non_zero_random(2,11);
 
 Context()->texStrings;
 BEGIN_TEXT
-In this problem you will solve the differential equation  
+In this problem you will solve the differential equation
 \[$A x y'' - y'+$B y =0.\]
 
 $PAR
 $BBOLD (1) $EBOLD
-Since \(P(x)=\)\{ ans_rule(6) \} or \(Q(x)=\)\{ ans_rule(6) \} 
-are not analytic at \(x=0\), \(x=\)\{ ans_rule(1) \} is a singular point of the 
-differential equation.  
-Using Frobenius' Theorem, we must check that \(xP(x)=\)\{ ans_rule(6) \} and \(x^2Q(x)=\)\{ ans_rule(6) \} 
-are both analytic 
-at \(x=0\). Since \(xP(x)\) and \(x^2Q(x)\) are analytic at \(x=0\), \(x=0\) 
-is a regular singular point for the differential equation 
-\($A x y'' - y'+$B y =0.\)  From the result of  Frobenius' Theorem, we may assume that \($A x y'' - y'+$B y =0\) has a solution of the form 
-\(y= x^r\sum\limits_{n=0}^{\infty}c_nx^n\) which converges for 
+Since \(P(x)=\)\{ ans_rule(6) \} or \(Q(x)=\)\{ ans_rule(6) \}
+are not analytic at \(x=0\), \(x=\)\{ ans_rule(1) \} is a singular point of the
+differential equation.
+Using Frobenius' Theorem, we must check that \(xP(x)=\)\{ ans_rule(6) \} and \(x^2Q(x)=\)\{ ans_rule(6) \}
+are both analytic
+at \(x=0\). Since \(xP(x)\) and \(x^2Q(x)\) are analytic at \(x=0\), \(x=0\)
+is a regular singular point for the differential equation
+\($A x y'' - y'+$B y =0.\)  From the result of  Frobenius' Theorem, we may assume that \($A x y'' - y'+$B y =0\) has a solution of the form
+\(y= x^r\sum\limits_{n=0}^{\infty}c_nx^n\) which converges for
 \(x \in (0,R)\) where \(r\) and \(R\) are constants that will be determined later.
 
 $PAR
@@ -78,7 +78,7 @@ END_TEXT
 
 
   Context("Numeric");
-  Context()->flags->set( 
+  Context()->flags->set(
   tolerance => 0,
   tolType => "absolute"
   );
@@ -95,7 +95,7 @@ END_TEXT
 
 
   Context("Numeric");
-  Context()->flags->set( 
+  Context()->flags->set(
   tolerance => 0.000001,
   tolType => "absolute"
   );
@@ -133,7 +133,7 @@ $r   = Formula("-$kn/$kn2")->reduce;
 
 BEGIN_TEXT
 $BBOLD (2) $EBOLD
-Substituting \(y = x^r\sum_{n=0}^{\infty}c_n\ x^n\) into 
+Substituting \(y = x^r\sum_{n=0}^{\infty}c_n\ x^n\) into
 \($A x y'' - y'+$B y =0\), we get that
 $BR
 \{ BeginTable(center=>0).
@@ -146,13 +146,13 @@ The subscripts on the \(c\)'s should be increasing and numbers or in terms of \(
 $EBOLD
 $PAR
 
-$BBOLD (3) $EBOLD In this step, we will use the equation above to find the indicial roots and the recurrence relation of the differential equation.  
+$BBOLD (3) $EBOLD In this step, we will use the equation above to find the indicial roots and the recurrence relation of the differential equation.
 $PAR
-$BBOLD (a) $EBOLD From the equation above, we know that the indicial roots of the differential equation are 
+$BBOLD (a) $EBOLD From the equation above, we know that the indicial roots of the differential equation are
 $BBOLD(in increasing order)$EBOLD
 \(r=\)\{ ans_rule(4) \} and \(r=\)\{ ans_rule(4) \}.
 $PAR
-$BBOLD (b) $EBOLD From the series above, we find that the recurrence relation is 
+$BBOLD (b) $EBOLD From the series above, we find that the recurrence relation is
 $BCENTER
 \{ BeginTable(center=>0).
       Row([tablesubscript(width=>3),'\( = \)',ans_rule(25),tablesubscript()," for ",ans_rule(2),'\( \geq \)',ans_rule(2)],separation=>1).
@@ -161,9 +161,9 @@ $BCENTER
 $ECENTER
 $PAR
 
-$BBOLD (4) $EBOLD The general solution to 
+$BBOLD (4) $EBOLD The general solution to
 \($A x y'' - y'+$B y =0\)
-is 
+is
 \{ BeginTable(center=>0).
       Row(['\(y\)','\(=A\)',tablesuperscript(variable=>'\(x\)'),'\(\Bigg(\)',ans_rule(1),'\( + \)',ans_rule(2),'\(x + \)',ans_rule(10),'\(x^2 + \)',ans_rule(15),'\(x^3 + \cdots \Bigg) \)'],separation=>1).
       Row(['','\( + B\)',tablesuperscript(variable=>'\(x\)'),'\(\Bigg(\)',ans_rule(1),'\( + \)',ans_rule(2),'\(x + \)',ans_rule(10),'\(x^2 + \)',ans_rule(15),'\(x^3 + \cdots \Bigg) \)'],separation=>1).
@@ -206,7 +206,7 @@ ANS( $n1->cmp() );#after Sigma
 ANS( $r1->cmp() );#indicial root
 ANS( $r2->cmp() );#indicial root
 
-ANS( $n1->cmp() ); 
+ANS( $n1->cmp() );
 ANS( $r->cmp() );  #Recurrence Relation
 ANS( $n->cmp() );
 ANS( $n->cmp() );

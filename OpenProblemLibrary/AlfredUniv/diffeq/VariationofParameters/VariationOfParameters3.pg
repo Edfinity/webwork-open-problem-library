@@ -3,7 +3,7 @@
 # File Created: 3/19/2009
 # Last Modified: 3/19/2009
 # Problem Author: Juan Marin
-# WeBWorK Entry: 
+# WeBWorK Entry:
 # Location: Alfred University
 #
 ##ENDDESCRIPTION
@@ -20,7 +20,7 @@
 ## MLTleader(1)
 ## Level(4)
 ## TitleText1('Differential Equations with Boundary-Value Problems')
-## AuthorText1('Zill, Cullen')
+## AuthorText1('Zill and Cullen')
 ## EditionText1('7')
 ## Section1('4.6')
 ## Problem1('6')
@@ -36,7 +36,7 @@ loadMacros(
   "Alfredmacros.pl",
   "PGcourse.pl"
 );
- 
+
 ## Show partial correct answers
 $showPartialCorrectAnswers = 1;
 ## Display the problem information
@@ -88,8 +88,8 @@ BEGIN_TEXT
 In this exercise you will solve the initial value problem
 \[y''-$b y' +$a2 y =$g,\ \ y(0) = $y0,\ \ y'(0) = $Dy0.\]
 $PAR
-(1) Let \(C_1\) and \(C_2\) be arbitrary constants.  The general solution to the related homogeneous differential equation  
-\(y''-$b y' +$a2 y =0\) is the function 
+(1) Let \(C_1\) and \(C_2\) be arbitrary constants.  The general solution to the related homogeneous differential equation
+\(y''-$b y' +$a2 y =0\) is the function
 \(y_h(x)=C_1\ y_1(x)+C_2\ y_2(x)=C_1\) \{ans_rule(6)\} \(+C_2\)\{ans_rule(6)\}.
 $BR $BR
 $BBOLD
@@ -97,9 +97,9 @@ NOTE: The order in which you enter the answers is important; that is,
 \(C_1 f(x) + C_2 g(x) \neq C_1 g(x) + C_2 f(x)\).
 $EBOLD
 $PAR
-(2) The particular solution \(y_p(x)\) to the differential equation \(y''+$b y' +$a2 y =$g\) is of the form 
-\( y_p(x)=y_1(x)\ u_1(x)+y_2(x)\ u_2(x)\) where 
-\(u_1'(x)=\) 
+(2) The particular solution \(y_p(x)\) to the differential equation \(y''+$b y' +$a2 y =$g\) is of the form
+\( y_p(x)=y_1(x)\ u_1(x)+y_2(x)\ u_2(x)\) where
+\(u_1'(x)=\)
 \{ans_rule(15)\}
 and \(u_2'(x)=\)
 \{ans_rule(15)\}.

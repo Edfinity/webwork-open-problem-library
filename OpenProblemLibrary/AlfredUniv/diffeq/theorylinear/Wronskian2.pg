@@ -3,7 +3,7 @@
 # File Created: 3/27/2009
 # Last Modified: 3/27/2009
 # Problem Author: Juan Marin
-# WeBWorK Entry: 
+# WeBWorK Entry:
 # Location: Alfred University
 #
 ##ENDDESCRIPTION
@@ -18,7 +18,7 @@
 ## Author(Juan Marin)
 ## Level(2)
 ## TitleText1('Differential Equations with Boundary-Value Problems')
-## AuthorText1('Zill, Cullen')
+## AuthorText1('Zill and Cullen')
 ## EditionText1('7')
 ## Section1('4.7')
 ## Problem1('')
@@ -37,7 +37,7 @@ loadMacros(
   "parserImplicitEquation.pl",
   "PGcourse.pl"
 );
- 
+
 $showPartialCorrectAnswers = 1;
 
 $a = random(2,5,1);
@@ -53,11 +53,11 @@ $int = Compute("(-inf,inf)");
 Context()->texStrings;
 BEGIN_TEXT
 $PAR
-It can be shown that \(y_1=$y1\)  and \(y_2=$y2\)  are 
-solutions to the differential equation 
+It can be shown that \(y_1=$y1\)  and \(y_2=$y2\)  are
+solutions to the differential equation
 \(\ddot{y}+y=0\).
 
-$PAR 
+$PAR
 \(W(y_1,y_2)\) =  \{$w->ans_rule()\}.
 $BR
 \(c_1y_1+c_2y_2\) is the general solution to the equation on the interval \{$int->ans_rule\}

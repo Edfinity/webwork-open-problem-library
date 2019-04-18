@@ -3,7 +3,7 @@
 # File Created: 3/27/2009
 # Last Modified: 3/27/2009
 # Problem Author: Juan Marin
-# WeBWorK Entry: 
+# WeBWorK Entry:
 # Location: Alfred University
 #
 ##ENDDESCRIPTION
@@ -18,7 +18,7 @@
 ## Author(Juan Marin)
 ## Level(2)
 ## TitleText1('Differential Equations with Boundary-Value Problems')
-## AuthorText1('Zill, Cullen')
+## AuthorText1('Zill and Cullen')
 ## EditionText1('7')
 ## Section1('4.7')
 ## Problem1('')
@@ -37,7 +37,7 @@ loadMacros(
   "parserImplicitEquation.pl",
   "PGcourse.pl"
 );
- 
+
 #install_problem_grader(~~&full_partial_grader);
 
 # No partial credit on this problem, so we say:
@@ -77,7 +77,7 @@ $ddg = $dg->D('x');
 $ddh = $dh->D('x');
 
 
-$w = Compute(" $f * ($dg * $ddh - $dh * $ddg) 
+$w = Compute(" $f * ($dg * $ddh - $dh * $ddg)
               -$g * ($df * $ddh - $dh * $ddf)
               +$h * ($df * $ddg - $dg * $ddf)
            ")->reduce;
@@ -88,7 +88,7 @@ $w = Compute(" $f * ($dg * $ddh - $dh * $ddg)
 # Make a new select list
 $tf = new_pop_up_select_list();
 $tf->ra_pop_up_list(["Yes" => "Yes","No" => "No"]);
-# $tf now "contains" the select list object.  
+# $tf now "contains" the select list object.
 # See matchinglistexample.pg for details
 
 
@@ -100,7 +100,7 @@ on \((0,\infty)\)?!,  # each entry has to end with a comma
 
 
 # Choose two of the question and answer pairs at random.
-$tf ->choose(1);  # Using choose(3) would choose all three questions, but the order of the questions and answers would be 
+$tf ->choose(1);  # Using choose(3) would choose all three questions, but the order of the questions and answers would be
                   # scrambled.
 
 
@@ -114,19 +114,19 @@ $tf ->choose(1);  # Using choose(3) would choose all three questions, but the or
 Context()->texStrings;
 BEGIN_TEXT
 $PAR
-It can be shown that \(y_1=x^{$p},\ y_2=x^{$q}\) and \(y_3=$e\) are 
-solutions to the differential equation 
+It can be shown that \(y_1=x^{$p},\ y_2=x^{$q}\) and \(y_3=$e\) are
+solutions to the differential equation
 \(x^2D^3y+$b x D^2y+ $c Dy =0\)
 on \((0,\infty)\).
-$PAR 
-What does the  Wronskian of \(y_1, y_2, y_3\) equal? 
+$PAR
+What does the  Wronskian of \(y_1, y_2, y_3\) equal?
 $PAR
 
 \(W(y_1, y_2, y_3 )\) =  \{ ans_rule()\} on \((0,\infty)\).
 
 $BR
 \{ $tf-> print_q \}
- 
+
 END_TEXT
 
 

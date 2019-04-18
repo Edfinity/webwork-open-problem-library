@@ -3,7 +3,7 @@
 # File Created: 3/27/2009
 # Last Modified: 3/27/2009
 # Problem Author: Juan Marin
-# WeBWorK Entry: 
+# WeBWorK Entry:
 # Location: Alfred University
 #
 ##ENDDESCRIPTION
@@ -18,7 +18,7 @@
 ## Author(Juan Marin)
 ## Level(3)
 ## TitleText1('Differential Equations with Boundary-Value Problems')
-## AuthorText1('Zill, Cullen')
+## AuthorText1('Zill and Cullen')
 ## EditionText1('7')
 ## Section1('4.7')
 ## Problem1('')
@@ -36,7 +36,7 @@ loadMacros(
   "parserImplicitEquation.pl",
   "PGcourse.pl"
 );
- 
+
 ## Show partial correct answers
 $showPartialCorrectAnswers = 1;
 ## Display the problem information
@@ -93,26 +93,26 @@ $fc=Compute($a * $c + $b);
 Context()->texStrings;
 BEGIN_TEXT
 
-If \(f\) is the Fourier series of \(g(x)=$a x + $b\) for \(-$p < x < $p\), then 
+If \(f\) is the Fourier series of \(g(x)=$a x + $b\) for \(-$p < x < $p\), then
 $BR
 \(f(x)= \) \{ ans_rule(2) \} \(+\displaystyle\sum_{n=1}^{\infty} \Bigg[
 \Big(\) \{ ans_rule(15) \} \(\displaystyle\Big)\cos\Big(\frac{n \pi}{$p}x\Big)
 +
 \Big(\)\{ ans_rule(15) \}\(\displaystyle\Big)\sin\Big(\frac{n \pi}{$p}x\Big)
 \Bigg]\)
-$PAR 
+$PAR
 
 What does \( f(-$p)\) equal?\(\ \ \ \  f(-$p)=\)\{ ans_rule(5) \}
 $PAR
 
-What does \( f($np2)\) equal?\(\ \ \ \  f($np2)=\)\{ ans_rule(5) \} 
-$PAR 
+What does \( f($np2)\) equal?\(\ \ \ \  f($np2)=\)\{ ans_rule(5) \}
+$PAR
 
 What does \( f(0)\) equal?\(\ \ \ \  f(0)=\)\{ ans_rule(5) \}
-$PAR 
+$PAR
 
 What does \( f($c)\) equal?\(\ \ \ \  f($c)=\)\{ ans_rule(5) \}
-$PAR 
+$PAR
 
 What does \( f($p)\) equal?\(\ \ \ \  f($p)=\)\{ ans_rule(5) \}
 
