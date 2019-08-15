@@ -9,7 +9,7 @@
 ## DBchapter(Propositional logic)
 ## DBsection(Translation)
 ## Institution(SDSU)
-## Author(Thomas Schmidt','Michael E. O'Sullivan)
+## Author(Thomas Schmidt,Michael E. O'Sullivan)
 ## MLT(Convert_to_formal_logic)
 ## MLTleader(1)
 ## Level(2)
@@ -53,7 +53,7 @@ $BCENTER
 $BR
 $BR
 \(\text{p: $p}\) $BR
-\(\text{q: $q}\) 
+\(\text{q: $q}\)
 $BR
 $BR
 $ECENTER
