@@ -1,6 +1,6 @@
 # DESCRIPTION
 # Negation of a formal logic statement
-# 
+#
 # WeBWorK problem written by Michael E. O'Sullivan
 # and Thomas Schmidt
 # ENDDESCRIPTION
@@ -9,7 +9,7 @@
 ## DBchapter(Propositional logic)
 ## DBsection(Operations on propositions)
 ## Institution(SDSU)
-## Author(Thomas Schmidt','Michael E. O'Sullivan)
+## Author(Thomas Schmidt,Michael E. O'Sullivan)
 ## MLT(negate)
 ## Level(2)
 
@@ -73,7 +73,7 @@ Distribute the \(not\) operator. $BR
 \(\equiv\sim (\sim p\vee q)\vee\sim\sim (p\wedge q)\) $BR
 \(\equiv (p\wedge\sim q)\vee (p\wedge q)\) $BR
 Thus, the answer is $BR
-\((p\wedge\sim q)\vee (p\wedge q)\) 
+\((p\wedge\sim q)\vee (p\wedge q)\)
 END_SOLUTION
 Context()->normalStrings;
 
